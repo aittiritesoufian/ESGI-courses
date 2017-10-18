@@ -1,0 +1,53 @@
+#Docker
+
+soutenance : par groupe de 4, 4 dev un nouveau dev qui arrive (prof), va falloir lui installer le même environnement rapidement en expliquant ce que l’on à fait et pourquoi et à quoi correspondent les commandes.
+
+##Docker compose (monter des série d’environnement).
+
+Hello-world : n’affiche qu’un message après l’exécution le container s’arrête
+
+docker ps : affiche la liste des container
+docker ps -a : affiche tous les container arrêtés
+docker run : lance un nouveau container
+docker start : démarre un container existant
+docker stop : arrête un container
+docker rm (nom) : supprime un container
+
+docker est un client et un serveur à la fois.
+Le serveur à une API qui permet à n’importe qui de ce connecter sur le container (depuis l’ordinateur local).
+On installera Portainer pour gérer les container par interface.
+
+#Docker images :
+
+‘photo’ d’un serveur avec une configuration (Apache, php, …).
+Peux être créer par n’importe qui et peu être partager sur docker hub ou sur des hub/PC privés.
+Contient tout ce qui est nécessaire pour faire fonctionner une application dans son environnement.
+
+#Repository :
+Contient des logiciels (PHP, ubuntu, redhat, …).
+Les noms d’images sans repos sont des images officiels.
+
+docker images : affiche toutes les images téléchargés sur le machine locale.
+
+Les images sont identifiés par des tags (qui correspondent à des version).
+On peut ainsi installer des ancienne ou nouvelles versions (peu permettre de tester une installation sur une nouvelle version avant la mise en prod.
+
+#Créer un container :
+
+docker run ubuntu:14.04 echo « Hello World »
+
+si on lance un container avec un bash, il s’arrêtera dès que le bash va s’arrêter.
+
+Si on souhaite relancer un container arrêter on lance avec docker start.
+
+On peu appeler le container avec ces 3 premiers chiffres (d’id).
+
+l’option -d permet de lancé un container et de le faire tourner en arrière-plan.
+
+l’option -ti permet de lancer un bash avec.
+
+TD : créer des container MariaDB-phpMyAdmin-Wordpress avec les dépendances des deux container vis-à-vis de mariaDB.
+
+docker run --name mariadb -e MYSQL_ROOT_PASSWORD=mypass -d mariadb
+docker run --name phpmyadmin -e MYSQL_ROOT_PASSWORD=mypass -d --link mariadb:db -p 8080:80 phpmyadmin/phpmyadmin
+docker run --name wordpress --link mariadb:mysql -d -p 7050:80 wordpress

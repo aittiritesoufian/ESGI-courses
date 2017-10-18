@@ -1,0 +1,46 @@
+#Bonnes pratiques du code
+
+-Git
+-GitLabs
+-testing
+
+###Git
+site collaboratif,
+gestion de projet
+
+
+####différence entre un repo public ou privé :
+
+Le repo public est visible partout sur le web et peut être cloner par n’importe qui, un dépôt privé n’est visible que par les utilisateurs autorisés et ne peut donc être cloner que par ces derniers.
+
+Que c’est-il passé ?
+
+Le fichier à été ajouter à la liste des fichiers disponible sur le projet et le commit à été ajouté avec pour commentaire « create test.txt »
+
+qu’est-ce qu’un commit ?
+
+Un commit est une modification apporté à la repository (ajout suppression de fichiers/de lignes dans les fichiers).
+
+Que c’est-il passé (2) ?
+
+un commit supplémentaire à été ajouté, il y indique le changement effectué (il à ajouter les lignes ajoutés au fichier lors de la modification, et supprimer la ligne modifiés pour la remplacer par celle intégrant les modifications.
+
+qu’est-ce qu’un commit ? (2)
+
+Un commit est une modification apporté à la repository (ajout suppression de fichiers/de lignes dans les fichiers).
+
+####Gists :
+
+permet de partager une portion de code public ou privée (privée réserver aux utilisateurs autorisés).
+
+####GitHub Pages :
+
+Créer une page web à partir du contenu visible par l’utilisateur que l’on reprend de notre projet, permet de créer un site web facilement par exemple pour la documentation du projet. On peu approfondir en utilisant jekyll.
+
+####Fork :
+
+Permet de créer une repo à partir d’une existante que l’on pourra ainsi modifier comme si il s’agit de notre code.
+
+####Git organisations :
+
+Intègre les même fonctionnalités que les users Git classiques mais intègre la gestion de groupes en plus.

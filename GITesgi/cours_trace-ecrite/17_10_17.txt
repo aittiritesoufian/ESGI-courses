@@ -1,0 +1,49 @@
+##Expérimenter quelques commandes dans le terminal > Que c’est-il passé ?
+
+Le fichier est maintenant tracké par Git, il est suivis.
+
+##Comprendre les branches Git > Que c’est-il passé ?
+
+Le fichier présent dans la branche Master est différent du fichier dans la branche ajout-texte. La branche ajout-texte possède une copie de README.md au moment de sa création et est modifié indépendamment de la version originale.
+
+##Ignorer des fichiers / dossiers > Que c’est-il passé ?
+
+Le dossier à été tracké par git car il contient un fichier .gitkeep.
+
+#TRAVAILLER A PLUSIEURS SUR GIT
+
+Récupérer un dépot distant (sur GitHub)
+
+###Que s’est-il passé ?
+
+On à récupérer une copie du contenu de la repository à l’adresse https://github.com/mickaelandrieu/magnificient-website.git.
+
+###Que s’est-il passé ? (2)
+
+On dispose de 2 remotes sur notre projet (git remtote), « origin » qui correspond à celle créer lors du clone et « mon-remote », créer manuellement juste après et qui correspond à la remote sur notre compte GitHub.
+
+On observe que chacun des remote créer un lien pour le push (l’envoi des commits sur la remote) et un lien pour le fetch (la récupération des commits depuis le remote).
+
+#Envoyer du code vers un dépôt distant (sur GitHub)
+
+###Que s’est-il passé ?
+
+Les modifications apportés on été faites sur le fichier README.md présent sur ma remote personnel qui est un fork de la remote  https://github.com/mickaelandrieu/magnificient-website.git.
+Mes modifications se font ainsi sur ma repository et non sur l’originale.
+
+#Récupérer du code vers un dépôt distant (à partir de GitHub)
+
+###Que s’est-il passé ?
+
+On à retrouver les modifications effectuées sur la remote, elles ont été appliquée à notre repo locale.
+
+(Arrêté à « La différence entre git merge et git rebase »)
+
+
+#Cours :
+##À quoi sert Git ?
+
+Outils de versionning de modifications. Permet de gérer les modifications en sachant qui à effectué une modification. On peu ainsi les supprimés.
+Branche = version du projet
+Commit = référence au projet avec des modifications réalisées à ce moment là.
+
