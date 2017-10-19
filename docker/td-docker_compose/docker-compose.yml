@@ -1,0 +1,25 @@
+version: "2.0"
+services:
+    mariadb:
+        image: mariadb
+        container_name: esgi-mariadb
+        environment:
+         - MYSQL_ROOT_PASSWORD=mypass
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        container_name: esgi-phpmyadmin
+        environment:
+         - MYSQL_ROOT_PASSWORD=mypass
+        ports:
+         - "8080:80"
+        links:
+         - "mariadb:db"
+
+    wordpress:
+        image: wordpress
+        container_name: esgi-wordpress
+        ports:
+         - "7050:80"
+        links:
+         - "mariadb:mysql"
