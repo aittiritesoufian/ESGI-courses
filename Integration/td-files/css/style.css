@@ -22,3 +22,7 @@ main > section:first-child {
 	background-color: #b9c4ca;
 }
 
+.container{
+	width:1000px;
+	margin:0 auto;
+}
