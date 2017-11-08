@@ -1,10 +1,39 @@
 package project;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Test {
+
+	public static void main(String[] args) {
+		/*System.out.println("tapez un mot");
+		//Saisie clavier :
+		Scanner entree = new Scanner(System.in);
+		String mot = entree.nextLine(); //dans mot est stocké une ligne entière
+		//Affichage console :
+		System.out.println(mot);*/
+		
+		//exercice 2
+		//System.out.println(transform((float)10.2536658574, 2));
+		
+		//exercice 3
+		/*System.out.println(monteCarlo(25));
+		System.out.println((Math.PI/4));*/
+		
+		//Exercice 4
+		/*int[] p1 = {1,2,3,4,5,6};
+		int[] p2 = {1,2,1,4,5,6};
+		System.out.println(rechDoub(p1));
+		System.out.println(rechDoub(p2));*/
+		
+		//Exercice 5
+		//System.out.println(Convertir(5));
+		
+		//Exercice 6
+		Scanner entree = new Scanner(System.in);
+		System.out.println("Saisissez la valeur limit de test :");
+		int val = entree.nextInt();
+		syracuse(val);
+	}
 	
 	public static float transform(float x,int n){
 		x = (float)((int)((float)(x * Math.pow(10, n))) / Math.pow(10, n));
@@ -41,7 +70,6 @@ public class Test {
 	public static String Convertir(int n){
 		String textReturn = "";
 		if(n<11){
-			
 			switch (n) {
 			case 1:
 				textReturn += "un";
@@ -103,34 +131,6 @@ public class Test {
 			}
 			System.out.println(i+" à nécessité "+compt+" étapes pour atteindre 1, le nombre maximal atteint à été "+max);
 		}
-	}
-
-	public static void main(String[] args) {
-		/*System.out.println("tapez un mot");
-		//Saisie clavier :
-		Scanner entree = new Scanner(System.in);
-		String mot = entree.nextLine(); //dans mot est stocké une ligne entière
-		//Affichage console :
-		System.out.println(mot);*/
-		
-		//exercice 2
-		//System.out.println(transform((float)10.2536658574, 2));
-		
-		//exercice 3
-		/*System.out.println(monteCarlo(25));
-		System.out.println((Math.PI/4));*/
-		
-		//Exercice 4
-		/*int[] p1 = {1,2,3,4,5,6};
-		int[] p2 = {1,2,1,4,5,6};
-		System.out.println(rechDoub(p1));
-		System.out.println(rechDoub(p2));*/
-		
-		//Exercice 5
-		//System.out.println(Convertir(5));
-		
-		//Exercice 6
-		//syracuse(1000);
 	}
 
 }
