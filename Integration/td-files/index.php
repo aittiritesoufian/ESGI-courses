@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="La description de ma page.">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Titre de la page</title>
 </head>
 <body>

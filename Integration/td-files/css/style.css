@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+*{
+
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header > section:first-child, footer > section:last-child{
+	background-color:#29373f;
+}
+
+header > section:nth-child(2){
+	background-color: #3e4f58;
+}
+
+main > section:first-child {
+	background-color: #b9c4ca;
+}
+
