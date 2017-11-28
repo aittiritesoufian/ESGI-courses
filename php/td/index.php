@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-
+Hello !
 	<?php
 
 	// PROCEDURAL

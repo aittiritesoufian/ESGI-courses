@@ -17,12 +17,12 @@ class User extends baseSql{
 	protected $email;
 	protected $pwd;
 
-	public __construct($firstname=null,$lastname=null,$email=null,$pwd=null){
+	public function __construct($firstname=null,$lastname=null,$email=null,$pwd=null){
 		$this->setFirstname($firstname);
 		$this->setLastname($lastname);
 		$this->setEmail($email);
 		$this->setPwd($pwd);
-		parent::__construct();
+//        parent::__construct();
 	}
 
     /**
@@ -97,13 +97,13 @@ class User extends baseSql{
         return $this;
     }
 
-    public function static hash($string){
-    	password_hash($string, PASSWORD_DEFAULT);
+    public static function hash($string){
+    	return password_hash($string, PASSWORD_DEFAULT);
     }
 }
 
-$user = new User();
-
+//$user = new User();
+$user = new User("AIT TIRITE","Soufian","saittirite@myges.fr","test");
 print_r($user);
 
 $user->save();
