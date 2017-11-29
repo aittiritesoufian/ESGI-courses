@@ -1,0 +1,14 @@
+main,footer{
+	height:400px;
+}
+main{
+	background-color: grey;
+	--couleur_lien:red;
+}
+footer{
+	background-color: black;
+	--couleur_lien:white;
+}
+a {
+	color: var(--couleur_lien);
+}
