@@ -1,0 +1,25 @@
+ body{
+ 	margin:0;
+ 	padding: 0;
+ }
+
+ a {
+ 	background-color: red;
+ 	width:100px;
+ 	height: 100px;
+ 	border:1px solid red;
+ 	border-radius: 20px;
+ 	margin:20px;
+ 	display: inline-block;
+ 	transition: all 0.4s;
+ 	text-align: center;
+ }
+
+ a:first-child:hover {
+ 	transform: rotate(180deg);
+ }
+
+ a:nth-child(2):hover {
+ 	transform: skewX(30deg);
+ 	width: 200px;
+ }
