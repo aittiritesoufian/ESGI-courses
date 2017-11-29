@@ -1,0 +1,25 @@
+@keyframes animation{
+			from{
+				left:0;
+			}
+			to {
+				#left:300px;
+				left:calc(100% - 30px);
+			}
+		}
+		body{
+			margin:0;
+		}
+
+		div{
+			width:30px;
+			height:30px;
+			background-color:grey;
+			position:absolute;
+			top:0;
+			left:0;
+			animation-name: animation;
+			animation-duration:2s;
+			animation-iteration-count:infinite;
+			animation-direction:alternate;
+		}
