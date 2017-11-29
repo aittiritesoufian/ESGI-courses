@@ -11,7 +11,7 @@ class UserController{
 	}
 
 	public function deleteAction($params){
-		echo "Action de suppression d'un user";
+		echo "Action de suppression d'un user<br>";
 		var_dump($params);
 		
 	}
