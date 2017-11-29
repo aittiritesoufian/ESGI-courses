@@ -1,25 +1,125 @@
 @keyframes animation{
-			from{
-				left:0;
+			0%{
+				left:2%; /*largeur d'une raquette*/
+				transform: none;
+				top:0;
 			}
-			to {
-				#left:300px;
-				left:calc(100% - 30px);
+			50%{
+				left:98%;
+				transform: translateX(-100%);
+				top:50%;
 			}
+			75%{
+				left:50%;
+				transform: translateX(-50%);
+				top:0%;
+			}
+			100%{
+				left:2%; /*largeur d'une raquette*/
+				transform: none;
+				top:30%;
+			}
+		}
+		@keyframes animation2{
+			0%{
+				top:0;
+			}
+			50%{
+				top:45%;
+			}
+			75%{
+				top:60%;
+			}
+			100%{
+				top:50%;
+			}
+		}
+		@keyframes animation3{
+			0%{
+				top:0;
+			}
+			50%{
+				top:50%;
+			}
+			75%{
+				top:60%;
+			}
+			100%
+			{
+				top:20%;
+			}
+		}
+		html,body{
+			height: 100%;
 		}
 		body{
 			margin:0;
+			padding: 0;
+			background-color:white;
+			transition: background-color 1s linear 0s;
 		}
 
-		div{
-			width:30px;
-			height:30px;
+		.balle{
+			width:3%;
+			height:3%;
 			background-color:grey;
 			position:absolute;
-			top:0;
-			left:0;
+			top:0px;
+			left:30px;
 			animation-name: animation;
 			animation-duration:2s;
 			animation-iteration-count:infinite;
 			animation-direction:alternate;
+			animation-timing-function: linear;
+			transition: width 1s linear 2s,height 1s linear 2s;
+		}
+
+		.right{
+			width:30px;
+			height:90px;
+			background-color:red;
+			position:absolute;
+			top:0;
+			right:0;
+			animation-name: animation2;
+			animation-duration:2s;
+			animation-iteration-count:infinite;
+			animation-direction:alternate;
+			animation-timing-function: linear;
+			transition: background-color 1s linear 2s;
+		}
+
+		.left{
+			width:30px;
+			height:90px;
+			background-color:red;
+			position:absolute;
+			top:0;
+			left:0;
+			animation-name: animation3;
+			animation-duration:2s;
+			animation-iteration-count:infinite;
+			animation-direction:alternate;
+			animation-timing-function: linear;
+			transition: background-color 1s linear 2s;
+		}
+		body:active{
+			background-color: #000;
+		}
+		body:active > .left,body:active > .right {
+			background-color:yellow;
+		}
+		body:active > .balle {
+			width:90%;
+			height:50%;
+		}
+
+		#message{
+			color:white;
+			position: relative;
+			display: inline-block;
+			left:50%;
+			top:50%;
+			transform: translateX(-50%) translateY(-50%);
+			text-align: center;
 		}
