@@ -1,0 +1,25 @@
+body > header > nav > ul > li {
+	list-style-type: none;
+	width:20%;
+	height:35px;
+	float: left;
+	position: relative;
+	display: inline-block;
+}
+
+
+
+body > header > nav > ul::after {
+	content: "";
+	display: table;
+	clear:both;
+}
+
+body > header > nav > ul::before {
+	content: "";
+	display: table;
+}
+
+body > header > nav > ul {
+	background-color: grey;
+}
