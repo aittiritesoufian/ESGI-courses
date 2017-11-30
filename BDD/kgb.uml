@@ -26,7 +26,7 @@
       <fontname>Dialog</fontname>
       <fontsize>12</fontsize>
       <defaultstereotypeview>0</defaultstereotypeview>
-      <activediagram>Diagramme de classes</activediagram>
+      <activediagram>untitledModel activity 1</activediagram>
     </settings>
     <searchpath href="PROJECT_DIR" />
     <members>
@@ -34,14 +34,6 @@
               name="kgb_profile.profile" />
       <member type="xmi"
               name="kgb.xmi" />
-      <member type="pgml"
-              name="kgb_Diagrammedeclasses.pgml"
-              diagramclass="org.argouml.uml.diagram.static_structure.ui.UMLClassDiagram"
-              diagramname="Diagramme de classes" />
-      <member type="pgml"
-              name="kgb_Diagrammedecasdutilisation.pgml"
-              diagramclass="org.argouml.uml.diagram.use_case.ui.UMLUseCaseDiagram"
-              diagramname="Diagramme de cas d&apos;utilisation" />
       <member type="pgml"
               name="kgb_untitledModelactivity1.pgml"
               diagramclass="org.argouml.uml.diagram.activity.ui.UMLActivityDiagram"
@@ -62,7 +54,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Fri Nov 10 12:59:38 CET 2017'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Thu Nov 30 23:37:00 CET 2017'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -145,6 +137,132 @@
                     <UML:Class xmi.idref = '127-0-0-1-5417ac1b:15fa5a5db7b:-8000:000000000000087F'/>
                   </UML:ObjectFlowState.type>
                 </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A76'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A7B'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A79'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A7C'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A7D'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A7F'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A80'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A81'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A82'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A83'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A84'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A86'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A87'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A88'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A89'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A8A'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A8B'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A8C'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A8D'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A8E'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A8F'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A90'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A91'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A92'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A93'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A94'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A95'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A96'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A97'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A98'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A99'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A9A'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A9B'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A9D'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A9E'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A9F'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000AA0'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000AA1'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000AA2'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000AA3'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
+                <UML:ObjectFlowState xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000AA4'
+                  isSpecification = 'false' isSynch = 'false'>
+                  <UML:ObjectFlowState.type>
+                    <UML:Class xmi.idref = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000AA5'/>
+                  </UML:ObjectFlowState.type>
+                </UML:ObjectFlowState>
               </UML:CompositeState.subvertex>
             </UML:CompositeState>
           </UML:StateMachine.top>
@@ -182,396 +300,85 @@
         <UML:Class xmi.id = '127-0-0-1-5417ac1b:15fa5a5db7b:-8000:000000000000087F'
           name = '&#10;Pays&#10;' visibility = 'public' isSpecification = 'false'
           isRoot = 'false' isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A77'
+          name = 'planque' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A7B'
+          name = 'planques' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A7C'
+          name = 'materiel' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A7E'
+          name = 'salle' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A7F'
+          name = 'salles' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A81'
+          name = 'dossier' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A83'
+          name = 'proches' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A85'
+          name = 'victime' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A86'
+          name = 'victimes' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A88'
+          name = 'cible' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A8A'
+          name = 'organisation' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A8C'
+          name = 'historique' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A8E'
+          name = 'mission' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A90'
+          name = 'debrief' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A92'
+          name = 'cadres' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A94'
+          name = 'véhicules' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A96'
+          name = 'hackers' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A98'
+          name = 'teams' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A9A'
+          name = 'kit neutralisation' visibility = 'public' isSpecification = 'false'
+          isRoot = 'false' isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A9C'
+          name = 'kit special' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A9D'
+          name = 'equipe spéciale' visibility = 'public' isSpecification = 'false'
+          isRoot = 'false' isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A9F'
+          name = 'enregistrement' visibility = 'public' isSpecification = 'false'
+          isRoot = 'false' isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000AA1'
+          name = 'documents' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000AA3'
+          name = 'éléments' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000AA5'
+          name = 'photos' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
       </UML:Namespace.ownedElement>
     </UML:Model>
   </XMI.content>
 </XMI>
-<pgml description="org.argouml.uml.diagram.static_structure.ui.UMLClassDiagram|127-0-0-1-5417ac1b:15fa5a5db7b:-8000:0000000000000865"
-      name="Diagramme de classes"
->
-  <text name="Fig0"
-    x="544"
-    y="128"
-    width="136"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-dossiers
-</text>
-  <text name="Fig1"
-    x="152"
-    y="216"
-    width="128"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-planques
-</text>
-  <text name="Fig2"
-    x="696"
-    y="136"
-    width="120"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-proches
-</text>
-  <text name="Fig3"
-    x="472"
-    y="272"
-    width="144"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-historique
-</text>
-  <text name="Fig4"
-    x="536"
-    y="208"
-    width="128"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-Cible
-</text>
-  <text name="Fig5"
-    x="680"
-    y="272"
-    width="136"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-organisation
-</text>
-  <text name="Fig6"
-    x="720"
-    y="360"
-    width="128"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-Cadres
-</text>
-  <text name="Fig7"
-    x="544"
-    y="376"
-    width="128"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-Véhicule
-</text>
-  <text name="Fig8"
-    x="312"
-    y="416"
-    width="136"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-kit neutralisation
-</text>
-  <text name="Fig9"
-    x="112"
-    y="384"
-    width="128"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-salles
-</text>
-  <text name="Fig10"
-    x="152"
-    y="312"
-    width="120"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-matériel
-</text>
-  <text name="Fig11"
-    x="296"
-    y="280"
-    width="120"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-mission
-</text>
-  <text name="Fig12"
-    x="352"
-    y="344"
-    width="120"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-debrief
-</text>
-  <text name="Fig13"
-    x="544"
-    y="448"
-    width="120"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-teams
-</text>
-  <text name="Fig14"
-    x="736"
-    y="448"
-    width="120"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-hackers
-</text>
-  <text name="Fig15"
-    x="112"
-    y="480"
-    width="120"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-éléments
-</text>
-  <text name="Fig16"
-    x="696"
-    y="216"
-    width="136"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-Victimes
-</text>
-  <text name="Fig17"
-    x="48"
-    y="560"
-    width="128"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-Photos
-</text>
-  <text name="Fig18"
-    x="200"
-    y="560"
-    width="120"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-Documents
-</text>
-  <text name="Fig19"
-    x="344"
-    y="560"
-    width="120"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-Enregistrement
-</text>
-  <text name="Fig20"
-    x="616"
-    y="552"
-    width="120"
-    height="49"
-    fill="0"
-    fillcolor="white"
-    stroke="1"
-    strokecolor="black"
-    textcolor="black"
-    font="Dialog"
-    italic="false"
-    bold="false"
-    textsize="12"
-    justification="Center"
-  >
-équipe spéciale
-</text>
-</pgml>
-<pgml description="org.argouml.uml.diagram.use_case.ui.UMLUseCaseDiagram|127-0-0-1-5417ac1b:15fa5a5db7b:-8000:0000000000000865"
-      name="Diagramme de cas d&apos;utilisation"
->
-</pgml>
 <pgml description="org.argouml.uml.diagram.activity.ui.UMLActivityDiagram|127-0-0-1-5417ac1b:15fa5a5db7b:-8000:0000000000000867"
       name="untitledModel activity 1"
 >
@@ -1221,6 +1028,1350 @@ Pays
     <text name="Fig9.3"
       x="760"
       y="215"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig10"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[208, 256, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A76"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig10.0"
+      x="208"
+      y="256"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig10.1"
+      x="208"
+      y="256"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig10.2"
+      x="216"
+      y="264"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >planques</text>
+    <text name="Fig10.3"
+      x="216"
+      y="295"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig11"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[424, 264, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A79"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig11.0"
+      x="424"
+      y="264"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig11.1"
+      x="424"
+      y="264"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig11.2"
+      x="432"
+      y="272"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >materiel</text>
+    <text name="Fig11.3"
+      x="432"
+      y="303"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig12"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[232, 384, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A7D"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig12.0"
+      x="232"
+      y="384"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig12.1"
+      x="232"
+      y="384"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig12.2"
+      x="240"
+      y="392"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >salles</text>
+    <text name="Fig12.3"
+      x="240"
+      y="423"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig13"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[680, 280, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A80"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig13.0"
+      x="680"
+      y="280"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig13.1"
+      x="680"
+      y="280"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig13.2"
+      x="688"
+      y="288"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >dossier</text>
+    <text name="Fig13.3"
+      x="688"
+      y="319"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig14"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[872, 296, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A82"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig14.0"
+      x="872"
+      y="296"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig14.1"
+      x="872"
+      y="296"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig14.2"
+      x="880"
+      y="304"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >proches</text>
+    <text name="Fig14.3"
+      x="880"
+      y="335"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig15"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[888, 400, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A84"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig15.0"
+      x="888"
+      y="400"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig15.1"
+      x="888"
+      y="400"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig15.2"
+      x="896"
+      y="408"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >victimes</text>
+    <text name="Fig15.3"
+      x="896"
+      y="439"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig16"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[696, 408, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A87"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig16.0"
+      x="696"
+      y="408"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig16.1"
+      x="696"
+      y="408"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig16.2"
+      x="704"
+      y="416"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >cible</text>
+    <text name="Fig16.3"
+      x="704"
+      y="447"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig17"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[904, 520, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A89"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig17.0"
+      x="904"
+      y="520"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig17.1"
+      x="904"
+      y="520"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig17.2"
+      x="912"
+      y="528"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >organisation</text>
+    <text name="Fig17.3"
+      x="912"
+      y="559"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig18"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[704, 520, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A8B"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig18.0"
+      x="704"
+      y="520"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig18.1"
+      x="704"
+      y="520"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig18.2"
+      x="712"
+      y="528"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >historique</text>
+    <text name="Fig18.3"
+      x="712"
+      y="559"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig19"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[512, 528, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A8D"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig19.0"
+      x="512"
+      y="528"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig19.1"
+      x="512"
+      y="528"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig19.2"
+      x="520"
+      y="536"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >mission</text>
+    <text name="Fig19.3"
+      x="520"
+      y="567"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig20"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[496, 616, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A8F"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig20.0"
+      x="496"
+      y="616"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig20.1"
+      x="496"
+      y="616"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig20.2"
+      x="504"
+      y="624"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >debrief</text>
+    <text name="Fig20.3"
+      x="504"
+      y="655"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig21"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[928, 632, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A91"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig21.0"
+      x="928"
+      y="632"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig21.1"
+      x="928"
+      y="632"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig21.2"
+      x="936"
+      y="640"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >cadres</text>
+    <text name="Fig21.3"
+      x="936"
+      y="671"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig22"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[696, 640, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A93"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig22.0"
+      x="696"
+      y="640"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig22.1"
+      x="696"
+      y="640"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig22.2"
+      x="704"
+      y="648"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >véhicules</text>
+    <text name="Fig22.3"
+      x="704"
+      y="679"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig23"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[936, 744, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A95"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig23.0"
+      x="936"
+      y="744"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig23.1"
+      x="936"
+      y="744"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig23.2"
+      x="944"
+      y="752"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >hackers</text>
+    <text name="Fig23.3"
+      x="944"
+      y="783"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig24"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[696, 760, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A97"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig24.0"
+      x="696"
+      y="760"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig24.1"
+      x="696"
+      y="760"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig24.2"
+      x="704"
+      y="768"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >teams</text>
+    <text name="Fig24.3"
+      x="704"
+      y="799"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig25"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[464, 744, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A99"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig25.0"
+      x="464"
+      y="744"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig25.1"
+      x="464"
+      y="744"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig25.2"
+      x="472"
+      y="752"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >kit neutralisation</text>
+    <text name="Fig25.3"
+      x="472"
+      y="783"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig26"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[960, 840, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A9B"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig26.0"
+      x="960"
+      y="840"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig26.1"
+      x="960"
+      y="840"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig26.2"
+      x="968"
+      y="848"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >equipe spéciale</text>
+    <text name="Fig26.3"
+      x="968"
+      y="879"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig27"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[456, 368, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000A9E"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig27.0"
+      x="456"
+      y="368"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig27.1"
+      x="456"
+      y="368"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig27.2"
+      x="464"
+      y="376"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >enregistrement</text>
+    <text name="Fig27.3"
+      x="464"
+      y="407"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig28"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[608, 872, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000AA0"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig28.0"
+      x="608"
+      y="872"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig28.1"
+      x="608"
+      y="872"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig28.2"
+      x="616"
+      y="880"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >documents</text>
+    <text name="Fig28.3"
+      x="616"
+      y="911"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig29"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[432, 880, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000AA2"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig29.0"
+      x="432"
+      y="880"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig29.1"
+      x="432"
+      y="880"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig29.2"
+      x="440"
+      y="888"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >éléments</text>
+    <text name="Fig29.3"
+      x="440"
+      y="919"
+      width="122"
+      height="17"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    ></text>
+  </group>
+  <group name="Fig30"
+       description="org.argouml.uml.diagram.activity.ui.FigObjectFlowState[264, 808, 138, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-0-1-46aabee7:1600ef7f716:-8000:0000000000000AA4"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig30.0"
+      x="264"
+      y="808"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="1"
+      strokecolor="255 0 255"
+    />
+    <rectangle name="Fig30.1"
+      x="264"
+      y="808"
+      width="138"
+      height="64"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <text name="Fig30.2"
+      x="272"
+      y="816"
+      width="122"
+      height="23"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >photos</text>
+    <text name="Fig30.3"
+      x="272"
+      y="847"
       width="122"
       height="17"
       fill="0"
