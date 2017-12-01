@@ -8,6 +8,7 @@ public class Compte {
 	private int decouvertMax;
 	private int debitMax;
 	private String releveComtpe;
+	private String cacheReleve;
 	private static int nbComptes = 0;
 
 	public Compte(String nom) {
@@ -78,6 +79,14 @@ public class Compte {
 
 	public void setReleveComtpe(String releveComtpe) {
 		this.releveComtpe = releveComtpe;
+	}
+
+	public String getCacheReleve() {
+		return cacheReleve;
+	}
+
+	public void setCacheReleve(String cacheReleve) {
+		this.cacheReleve = cacheReleve;
 	}
 
 	public String toString() {

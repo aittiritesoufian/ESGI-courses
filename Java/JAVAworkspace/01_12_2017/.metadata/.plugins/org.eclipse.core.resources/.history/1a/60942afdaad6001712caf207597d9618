@@ -8,6 +8,7 @@ public class Compte {
 	private int decouvertMax;
 	private int debitMax;
 	private String releveComtpe;
+	private String cacheReleve;
 	private static int nbComptes = 0;
 
 	public Compte(String nom) {
@@ -80,6 +81,14 @@ public class Compte {
 		this.releveComtpe = releveComtpe;
 	}
 
+	public String getCacheReleve() {
+		return cacheReleve;
+	}
+
+	public void setCacheReleve(String cacheReleve) {
+		this.cacheReleve = cacheReleve;
+	}
+
 	public String toString() {
 		return "Compte [nom=" + nom + ", numCompte=" + numCompte + ", solde=" + solde + ", montantDecouvertMax="
 				+ decouvertMax + ", montantDebitMax=" + debitMax + "] " + this.isDecouvert();
@@ -96,7 +105,8 @@ public class Compte {
 		if (val > 0) {
 			this.setSolde(this.getSolde() + val);
 			if(!virement){
-				this.updateReleveCompte("Crédit de "+val);
+				this.setCacheReleve("Crédit de "+val);
+				this.updateReleveCompte();
 			}
 		}
 	}
@@ -107,7 +117,8 @@ public class Compte {
 				if (val <= this.getDebitMax()) {
 					this.setSolde(this.getSolde()-val);
 					if(!virement){
-						this.updateReleveCompte("Débit de "+val);
+						this.setCacheReleve("Débit de "+val);
+						this.updateReleveCompte();
 					}
 					return true;
 				}
@@ -119,15 +130,18 @@ public class Compte {
 	public boolean virementVers(int somme, Compte c) {
 		if (this.debiter(somme,true)) {
 			c.crediter(somme,true);
-			this.updateReleveCompte("Virement sortant de "+somme);
-			c.updateReleveCompte("Virement entrant de "+somme);
+			this.setCacheReleve("Virement sortant de "+somme);
+			this.updateReleveCompte();
+			c.setCacheReleve("Virement entrant de "+somme);
+			c.updateReleveCompte();
 			return true;
 		}
 		return false;
 	}
 	
-	public void updateReleveCompte(String value){
-		this.setReleveComtpe(this.getReleveComtpe()+value+"\n");
+	public void updateReleveCompte(){
+		this.setReleveComtpe(this.getReleveComtpe()+this.getCacheReleve()+"\n");
+		this.setCacheReleve(null);
 	}
 
 }
