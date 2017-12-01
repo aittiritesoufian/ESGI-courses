@@ -1,0 +1,97 @@
+package compte;
+
+public class Compte {
+
+	private String nom;
+	private int numCompte;
+	private int solde;
+	private int montantDecouvertMax;
+	private int montantDebitMax;
+
+	public Compte(String nom, int numCompte) {
+		super();
+		this.nom = nom;
+		this.numCompte = numCompte;
+		this.solde = 0;
+		this.montantDecouvertMax = 800;
+		this.montantDebitMax = 1000;
+	}
+
+	public Compte(String nom, int numCompte, int solde, int montantDecouvertMax, int montantDebitMax) {
+		super();
+		this.nom = nom;
+		this.numCompte = numCompte;
+		this.solde = solde;
+		this.montantDecouvertMax = montantDecouvertMax;
+		this.montantDebitMax = montantDebitMax;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public int getNumCompte() {
+		return numCompte;
+	}
+
+	public void setNumCompte(int numCompte) {
+		this.numCompte = numCompte;
+	}
+
+	public int getSolde() {
+		return solde;
+	}
+
+	public void setSolde(int solde) {
+		this.solde = solde;
+	}
+
+	public int getMontantDecouvertMax() {
+		return montantDecouvertMax;
+	}
+
+	public void setMontantDecouvertMax(int montantDecouvertMax) {
+		this.montantDecouvertMax = montantDecouvertMax;
+	}
+
+	public int getMontantDebitMax() {
+		return montantDebitMax;
+	}
+
+	public void setMontantDebitMax(int montantDebitMax) {
+		this.montantDebitMax = montantDebitMax;
+	}
+
+	public String toString() {
+		return "Compte [nom=" + nom + ", numCompte=" + numCompte + ", solde=" + solde + ", montantDecouvertMax="
+				+ montantDecouvertMax + ", montantDebitMax=" + montantDebitMax + "] " + this.isDecouvert();
+	}
+
+	public String isDecouvert() {
+		if (this.getsolde < 0) {
+			return "Le compte est à découvert de " + this.solde;
+		}
+		return "";
+	}
+	
+	public void crediter(int val){
+		if(val > 0){
+			this.setSolde(this.getSolde()+val);
+		}
+	}
+	
+	public void debiter(int val){
+		if(val > 0){
+			if((this.getSolde() - val) <= this.getMontantDecouvertMax()){
+				if(this.getMontantDebitMax()<=val){
+					this.setSolde(this.getSolde()-val);
+				}
+			}
+		}
+	}
+
+}
