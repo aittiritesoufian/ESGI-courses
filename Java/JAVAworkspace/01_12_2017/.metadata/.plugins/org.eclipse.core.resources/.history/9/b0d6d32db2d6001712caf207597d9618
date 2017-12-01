@@ -1,0 +1,35 @@
+package exercice2;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Agence a = new Agence("CONDE", "242, Rue du faubourg saint antoine, 75012 PARIS");
+		a.createCompte("AIT TIRITE", 3000, 500, 200);
+		a.createCompte("HARANG");
+		
+		//recherche par nom
+		System.out.println(a.getCompte("AIT TIRITE"));
+		System.out.println(a.getCompte("HARANG"));
+
+		//recherche par id
+		System.out.println(a.getCompte(1));
+		System.out.println(a.getCompte(0));
+		
+		//depots & retraits & virements
+		a.depot(a.getCompte(1), 250);
+		a.retrait(a.getCompte(1), 60);
+		a.virement(a.getCompte(1), 60, a.getCompte("AIT TIRITE"));
+
+		//recherche par id
+		System.out.println(a.getCompte(1));
+		System.out.println(a.getCompte(0));
+		
+		//relevé d'opérations
+		System.out.println(a.releveOperation(a.getCompte("HARANG").getNumCompte()));
+		
+		//relevé d'agence
+		a.releveAgence();
+		
+	}
+
+}

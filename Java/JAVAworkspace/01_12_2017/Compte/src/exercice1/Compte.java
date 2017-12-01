@@ -21,13 +21,13 @@ public class Compte {
 		Compte.nbComptes++;
 	}
 
-	public Compte(String nom, int solde, int montantDecouvertMax, int montantDebitMax) {
+	public Compte(String nom, int solde, int decouvertMax, int debitMax) {
 		super();
 		this.nom = nom;
 		this.numCompte = Compte.nbComptes;
 		this.solde = solde;
-		this.decouvertMax = montantDecouvertMax;
-		this.debitMax = montantDebitMax;
+		this.decouvertMax = decouvertMax;
+		this.debitMax = debitMax;
 		this.releveComtpe = "";
 		Compte.nbComptes++;
 	}

@@ -1,0 +1,14 @@
+package exercice2;
+
+import java.util.ArrayList;
+
+import exercice1.Compte;
+
+public class Agence {
+
+	private String nomDirecteur;
+	private String adresse;
+	private ArrayList<Compte> lesComptes;
+	
+	
+}
