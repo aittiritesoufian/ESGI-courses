@@ -1,9 +1,0 @@
-package compte;
-
-public class Compte {
-
-	private String nom;
-	private int numCompte;
-	private int solde;
-	private int numCompte;
-}
