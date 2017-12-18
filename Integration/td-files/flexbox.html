@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox 0</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body {
+			font-size: 2em;
+			font-family: monospace;
+		}
+
+		.conteneur {
+			height: 400px;
+			background-color: grey;
+			margin-bottom: 30px;
+			color: white;
+			display: flex;
+		}
+
+		.conteneur div{
+			padding: 20px 40px;
+			box-sizing: border-box;
+		}
+
+		#ex1 {
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-around;
+		}
+
+		.conteneur div:first-child {
+			background-color: red;
+		}
+		.conteneur div:nth-child(2){
+			background-color: orange;
+		}
+		.conteneur div:nth-child(3){
+			background-color: green;
+		}
+		.conteneur div:nth-child(4){
+			background-color: blue;
+		}
+		.conteneur div:nth-child(5){
+			background-color: purple;
+		}
+		.conteneur div:nth-child(6){
+			background-color: pink;
+		}
+
+		#ex2 {
+			flex-direction: row-reverse;
+			flex-wrap: nowrap;
+		}
+
+		#ex2 div:first-child {
+			flex:1;
+		}
+		#ex2 div:nth-child(2){
+			flex:0.5;
+		}
+		#ex2 div:nth-child(3){
+			flex:1;
+		}
+		#ex2 div:nth-child(4){
+			flex:1;
+		}
+		#ex2 div:nth-child(5){
+			flex:1;
+		}
+		#ex2 div:nth-child(6){
+			flex:1;
+		}
+
+		#ex3 {
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-content: flex-start;
+		}
+
+		#ex3 div:first-child {
+			flex-basis: 25%;
+		}
+		#ex3 div:nth-child(2){
+			flex-basis: 25%;
+		}
+		#ex3 div:nth-child(3){
+			flex-basis: 25%;
+		}
+		#ex3 div:nth-child(4){
+			flex-basis: 25%;
+		}
+		#ex3 div:nth-child(5){
+			flex-basis: 25%;
+		}
+		#ex3 div:nth-child(6){
+			flex-basis: 25%;
+		}
+
+
+		#ex4 {
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: flex-start;
+		}
+
+		#ex4 div:nth-child(4){
+			flex-basis: 25%;
+			order: -1;
+		}
+
+
+		#ex5 {
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: flex-start;
+		}
+
+		#ex5 div:first-child {
+			flex:1;
+		}
+		#ex5 div:nth-child(2){
+			flex:1;
+			align-self: center;
+		}
+		#ex5 div:nth-child(3){
+			flex:1;
+			align-self: flex-end;
+		}
+		#ex5 div:nth-child(4){
+			flex:1;
+		}
+		#ex5 div:nth-child(5){
+			flex:1;
+			align-self: center;
+		}
+		#ex5 div:nth-child(6){
+			flex:1;
+			align-self: flex-end;
+		}
+
+
+		#ex6 {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+		#ex6 p{
+			text-align: center;
+		}
+
+		#ex6 div:first-child {
+			flex:2;
+			flex-basis: 50%;
+		}
+		#ex6 div:nth-child(2){
+			flex:1;
+			flex-basis: 25%;
+		}
+		#ex6 div:nth-child(3){
+			flex:1;
+			flex-basis: 25%;
+		}
+		#ex6 div:nth-child(4){
+			flex-basis: calc(50%/3);
+		}
+		#ex6 div:nth-child(5){
+			flex-basis: calc(50%/3);
+		}
+		#ex6 div:nth-child(6){
+			flex-basis: calc(50%/3);
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="conteneur" id="ex1">
+		<div><p>Bloc 1</p></div>
+		<div><p>Bloc 2</p></div>
+		<div><p>Bloc 3</p></div>
+		<div><p>Bloc 4</p></div>
+		<div><p>Bloc 5</p></div>
+		<div><p>Bloc 6</p></div>
+	</div>
+
+	<div class="conteneur" id="ex2">
+		<div><p>Bloc 1</p></div>
+		<div><p>Bloc 2</p></div>
+		<div><p>Bloc 3</p></div>
+		<div><p>Bloc 4</p></div>
+		<div><p>Bloc 5</p></div>
+		<div><p>Bloc 6</p></div>
+	</div>
+
+	<div class="conteneur" id="ex3">
+		<div><p>Bloc 1</p></div>
+		<div><p>Bloc 2</p></div>
+		<div><p>Bloc 3</p></div>
+		<div><p>Bloc 4</p></div>
+		<div><p>Bloc 5</p></div>
+		<div><p>Bloc 6</p></div>
+	</div>
+
+	<div class="conteneur" id="ex4">
+		<div><p>Bloc 1</p></div>
+		<div><p>Bloc 2</p></div>
+		<div><p>Bloc 3</p></div>
+		<div><p>Bloc 4</p></div>
+		<div><p>Bloc 5</p></div>
+		<div><p>Bloc 6</p></div>
+	</div>
+
+	<div class="conteneur" id="ex5">
+		<div><p>Bloc 1</p></div>
+		<div><p>Bloc 2</p></div>
+		<div><p>Bloc 3</p></div>
+		<div><p>Bloc 4</p></div>
+		<div><p>Bloc 5</p></div>
+		<div><p>Bloc 6</p></div>
+	</div>
+
+	<div class="conteneur" id="ex6">
+		<div><p>Bloc 1</p></div>
+		<div><p>Bloc 2</p></div>
+		<div><p>Bloc 3</p></div>
+		<div><p>Bloc 4</p></div>
+		<div><p>Bloc 5</p></div>
+		<div><p>Bloc 6</p></div>
+	</div>
+</body>
+</html>

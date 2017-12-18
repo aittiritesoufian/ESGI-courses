@@ -3,10 +3,21 @@
 <head>
 	<title>Media Queries</title>
 	<link rel="stylesheet" type="text/css" href="css/stylemq.css">
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function toggleMenu(){
+			if (document.getElementById('menu').className=="ouvert") {
+				document.getElementById('menu').className="";
+			} else {
+				document.getElementById('menu').className="ouvert";
+			}
+		}
+	</script>
 </head>
 <body>
 	<header>
-		<nav>
+		<div id="mobile" onclick="toggleMenu()"></div>
+		<nav id="menu">
 			<ul>
 				<li><a href="#">Lien1</a></li>
 				<li><a href="#">Lien2</a></li>

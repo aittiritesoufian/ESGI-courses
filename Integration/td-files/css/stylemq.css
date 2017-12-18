@@ -1,25 +1,105 @@
-body > header > nav > ul > li {
+body {
+	background-color: #F3F3F3;
+	margin: 20px;
+}
+
+header > nav > ul {
 	list-style-type: none;
-	width:20%;
-	height:35px;
-	float: left;
+	margin: 0;
 	position: relative;
+}
+
+header > nav > ul > li {
+	width:20%;
+	float: left;
+	padding: 1rem;
 	display: inline-block;
+	box-sizing: border-box;
+	text-align: center;
 }
 
+nav a {
+	color:#fff;
+}
 
-
-body > header > nav > ul::after {
+header > nav > ul::after {
 	content: "";
 	display: table;
-	clear:both;
+	clear: both;
 }
 
-body > header > nav > ul::before {
+header > nav > ul::before {
 	content: "";
 	display: table;
 }
 
-body > header > nav > ul {
+header > nav > ul {
 	background-color: grey;
 }
+
+article {
+	width:70%;
+	float: left;
+}
+
+aside {
+	width:30%;
+	float: left;
+}
+
+aside > main, article > main {
+	background-color: #fff;
+}
+
+main > p {
+	padding: 1rem;
+	margin: 0;
+}
+
+article > header, aside > header {
+	background-color: #123456;
+}
+
+article > header > h1, aside > header > h1{
+	color: #fff;
+	padding: 1em;
+	margin: 0;
+}
+
+#mobile::before {
+	display: none;
+	content: "Menu";
+	background-color: grey;
+	padding: 1em;
+	color: #fff;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+#mobile::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.ouvert {
+	display: block;
+}
+
+@media screen and (max-width:800px){
+	article, aside {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:640px){
+	header > nav > ul > li {
+		width: 100%;
+	}
+	header > nav > ul {
+		display: none;
+	}
+	#mobile::before {
+		display: table;
+	}
+}
+
