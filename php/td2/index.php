@@ -1,7 +1,6 @@
 <?php
 session_start();
 require "conf.inc.php";
-echo "hello<br>";
 
 function myAutoLoader($class){
 	if(file_exists("core/".$class.".class.php")){
@@ -13,14 +12,10 @@ spl_autoload_register("myAutoLoader");
 
 $uriExplode = explode("/", str_ireplace(DIRNAME, "",$_SERVER['REQUEST_URI']));
 
-$c = $uriExplode[1]?$uriExplode[1]:"index";
-$a = $uriExplode[2]?$uriExplode[2]:"index";
+$c = $uriExplode[0]?$uriExplode[0]:"index";
+$a = $uriExplode[1]?$uriExplode[1]:"index";
 
 $a = explode("?", $a)[0];
-
-// echo $c = $c?$c:"index";
-// echo "<br>";
-// echo $a = $a?$a:"index";
 
 //Controller : NomController
 $c = ucfirst(strtolower($c))."Controller";
@@ -35,11 +30,6 @@ $params = [
 			"GET"=>$_GET,
 			"URL"=>array_values($uriExplode),
 		];
-
-
-
-
-echo "<pre>";
 
 if (file_exists("controllers/".$c.".class.php")){
 	include "controllers/".$c.".class.php";
@@ -56,4 +46,3 @@ if (file_exists("controllers/".$c.".class.php")){
 } else {
 	die("Le fichier ".$c." n'existe pas !");
 }
-echo "</pre>";

@@ -18,4 +18,8 @@ class View{
 			die("Le template ".$this->t." n'existe pas !");
 		}
 	}
+
+	function __destruct(){
+		include "views/templates/".$this->t;
+	}
 }

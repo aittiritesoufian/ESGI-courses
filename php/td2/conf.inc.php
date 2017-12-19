@@ -6,5 +6,6 @@ define("DBPWD","root");
 define("DBPORT","3306");
 define("DBDRIVER","mysql");
 
+$scriptName = ($_SERVER['SCRIPT_NAME'] == "/")?"":$_SERVER['SCRIPT_NAME'];
 
-define("DIRNAME",dirname($_SERVER['SCRIPT_NAME']).DIRECTORY_SEPARATOR);
+define("DIRNAME",dirname($scriptName.DIRECTORY_SEPARATOR));

@@ -7,7 +7,7 @@ class UserController{
 	}
 
 	public function addAction($params){
-		echo "Action d'ajout d'un user";
+		$v = new View("ajout","front");
 	}
 
 	public function deleteAction($params){
