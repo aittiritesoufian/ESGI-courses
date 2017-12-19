@@ -10,10 +10,17 @@ function myAutoLoader($class){
 
 spl_autoload_register("myAutoLoader");
 
-$uriExplode = explode("/", str_ireplace(DIRNAME, "",$_SERVER['REQUEST_URI']));
+if (DIRNAME != "/") {
+	$uri = str_ireplace(DIRNAME, "", urldecode($_SERVER["REQUEST_URI"]));
+} else {
+	$uri = urldecode($_SERVER["REQUEST_URI"]);
+}
 
-$c = $uriExplode[0]?$uriExplode[0]:"index";
-$a = $uriExplode[1]?$uriExplode[1]:"index";
+$uri = explode("?", $uri);
+$uriExplode = explode("/", $uri[0]);
+
+$c = $uriExplode[1]?$uriExplode[1]:"index";
+$a = $uriExplode[2]?$uriExplode[2]:"index";
 
 $a = explode("?", $a)[0];
 
@@ -24,6 +31,7 @@ $a = strtolower($a)."Action";
 
 unset($uriExplode[0]);
 unset($uriExplode[1]);
+unset($uriExplode[2]);
 //params
 $params = [
 			"POST"=>$_POST,

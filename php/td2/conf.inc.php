@@ -8,4 +8,4 @@ define("DBDRIVER","mysql");
 
 $scriptName = ($_SERVER['SCRIPT_NAME'] == "/")?"":$_SERVER['SCRIPT_NAME'];
 
-define("DIRNAME",dirname($scriptName.DIRECTORY_SEPARATOR));
+define("DIRNAME",dirname($scriptName));
