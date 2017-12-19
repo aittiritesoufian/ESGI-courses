@@ -3,6 +3,14 @@ session_start();
 require "conf.inc.php";
 echo "hello<br>";
 
+function myAutoLoader($class){
+	if(file_exists("core/".$class.".class.php")){
+		include "core/".$class.".class.php";
+	}
+}
+
+spl_autoload_register("myAutoLoader");
+
 $uriExplode = explode("/", str_ireplace(DIRNAME, "",$_SERVER['REQUEST_URI']));
 
 $c = $uriExplode[1]?$uriExplode[1]:"index";
