@@ -5,7 +5,7 @@ public class Exercice5 {
 	public static void main(String[] args) {
 		Long startTime = System.currentTimeMillis();
 		
-		Integer[] tab = new Integer[10000];
+		Integer[] tab = new Integer[10];
 		
 		for (int i = 0; i < tab.length; i++) {
 			tab[i] = (int)(Math.random()*100);

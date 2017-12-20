@@ -1,0 +1,31 @@
+package td;
+
+import javax.swing.JButton;
+import javax.swing.JDialog;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+class Graph extends JFrame {
+	
+	public Graph() {
+				
+		JPanel boutons = new JPanel();
+		//boutons.add(new JButton(new ShowRatioHommeFemmeAction()));
+		//boutons.add(new JButton(new ShowNotesHommeFemmeAction()));
+
+		getContentPane().add(boutons, SOUTH);
+	
+	private class ShowNotesHommeFemmeAction extends AbstractAction {
+
+		public ShowNotesHommeFemmeAction() {
+			super("Notes du dernier exam H/F");
+		}
+
+		public void actionPerformed(ActionEvent e) {
+			notesDernierExamHommeFemmeJdialog = new JDialog();
+			notesDernierExamHommeFemmeJdialog.setTitle("Notes du dernier exam H/F");
+
+			notesDernierExamHommeFemmeJdialog.pack();
+			notesDernierExamHommeFemmeJdialog.setVisible(true);
+		}
+	}
