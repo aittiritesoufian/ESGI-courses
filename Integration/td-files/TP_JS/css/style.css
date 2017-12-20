@@ -1,0 +1,25 @@
+html {
+	width:100%;
+	min-height: 100%;
+}
+
+main{
+	min-height: 100%;
+	display: flex;
+}
+
+#roulette:hover {
+	cursor: pointer;
+}
+
+#roulette {
+	background-image: url("../image/color_wheel.png");
+	background-position: center;
+	background-size: 150%;
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	margin: auto;
+	transition: transform 3s ease-out;
+}
