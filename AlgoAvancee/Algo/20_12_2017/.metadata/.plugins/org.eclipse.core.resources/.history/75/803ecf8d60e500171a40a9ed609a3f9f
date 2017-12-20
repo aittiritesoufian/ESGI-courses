@@ -1,10 +1,8 @@
 package td;
 
-public class Exercice4 {
+public class Exercice3 {
 
 	public static void main(String[] args) {
-		Long startTime = System.currentTimeMillis();
-		
 		Integer[] tab = new Integer[10];
 		
 		for (int i = 0; i < tab.length; i++) {
@@ -20,24 +18,31 @@ public class Exercice4 {
 		for (int i = 0; i < tab.length; i++) {
 			min = tab[i];
 			position = i;
+			System.out.println("position i = "+position);
 			for (int j = i+1; j < tab.length; j++) {
 				if(min > tab[j]){
 					min = tab[j];
 					position = j;
 				}
+				System.out.println("position : "+position+" val = "+tab[position]);
 			}
 			temp = tab[i];
 			tab[i] = tab[position];
 			tab[position] = temp;
+//			for (int j = i+1; j < tab.length; j++) {
+//				if(tab[i] > tab[j]){
+//					temp = tab[i];
+//					tab[i] = tab[j];
+//					tab[j] = temp;
+//					temp = 0;
+//				}
+//			}
 		}
 
 		System.out.println("--------RESULTAT-----------");
 		for (int a = 0; a < tab.length; a++) {
 			System.out.println(tab[a]);
 		}
-
-		Long stopTime = System.currentTimeMillis();
-		System.out.println("Running on : "+(double)(stopTime-startTime)/1000+" sec.");
 	}
 
 }
