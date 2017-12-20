@@ -13,7 +13,7 @@ public class Exercice4 {
 		}
 
 		System.out.println("--------TRIS-----------");
-		//afficher un tableau "tris sélection"
+		//afficher un tableau trié dans l'ordre
 		int temp = 0;
 		int min = 0;
 		int position = 0;

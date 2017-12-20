@@ -1,6 +1,6 @@
 package td;
 
-public class Exercice4 {
+public class Exercice5 {
 
 	public static void main(String[] args) {
 		Long startTime = System.currentTimeMillis();
@@ -13,23 +13,18 @@ public class Exercice4 {
 		}
 
 		System.out.println("--------TRIS-----------");
-		//afficher un tableau "tris sélection"
+		//afficher un tableau trié en bulle
 		int temp = 0;
-		int min = 0;
-		int position = 0;
-		for (int i = 0; i < tab.length; i++) {
-			min = tab[i];
-			position = i;
-			for (int j = i+1; j < tab.length; j++) {
-				if(min > tab[j]){
-					min = tab[j];
-					position = j;
+		for (int bulle = tab.length; bulle > 1; bulle--) {
+				if(tab[bulle-1] < tab[bulle]){
+					continue;
+				} else {
+					temp = tab[bulle+1];
+					tab[bulle+1] = tab[bulle];
+					tab[bulle] = temp;
 				}
-			}
-			temp = tab[i];
-			tab[i] = tab[position];
-			tab[position] = temp;
 		}
+		
 
 		System.out.println("--------RESULTAT-----------");
 		for (int a = 0; a < tab.length; a++) {
