@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media Queries</title>
+	<link rel="stylesheet" type="text/css" href="css/stylemq.css">
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function toggleMenu(){
+			if (document.getElementById('menu').className=="ouvert") {
+				document.getElementById('menu').className="";
+			} else {
+				document.getElementById('menu').className="ouvert";
+			}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<div id="mobile" onclick="toggleMenu()"></div>
+		<nav id="menu">
+			<ul>
+				<li><a href="#">Lien1</a></li>
+				<li><a href="#">Lien2</a></li>
+				<li><a href="#">Lien3</a></li>
+				<li><a href="#">Lien4</a></li>
+				<li><a href="#">Lien5</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<article>
+			<header>
+				<h1>Zone principale</h1>
+			</header>
+			<main>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</main>
+		</article>
+		<aside>
+			<header>
+				<h1>Zone secondaire</h1>
+			</header>
+			<main>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</main>
+		</aside>
+	</main>
+</body>
+</html>
