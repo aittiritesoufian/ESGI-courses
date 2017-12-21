@@ -1,28 +1,27 @@
 package Ex2;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
 	public static void main(String[] args) {
-		Etudiant e1 = new Etudiant("Dupont", 20);
-		Etudiant e2 = new Etudiant("Dupont", 20);
-		Etudiant e3 = new Etudiant("Bloom", 20);
-		System.out.println(e1);
-		System.out.println(e2);
-		System.out.println(e3);
-		System.out.println(e1 == e2);
-		System.out.println(e1.equals(e2));
-		System.out.println(e1.hashCode());
-		System.out.println(e2.hashCode());
+		Etudiant e1 = new Etudiant("Dupont1", 21);
+		Etudiant e2 = new Etudiant("Bloom", 36);
+		Etudiant e3 = new Etudiant("Dupont2", 15);
 		
-		Etudiant e4 = e1.clone();
-		System.out.println(e4);
-		System.out.println(e1.equals(e4));
+		ArrayList<Etudiant> list = new ArrayList<>();
+		
+		list.add(e1);
+		list.add(e2);
+		list.add(e3);
+		
+		System.out.println(list);
+		Collections.sort(list);
+		System.out.println(list);
 	}
 }
 
 class Etudiant implements Comparable<Etudiant>{
-	
 	String nom;
 	int age;
 	ArrayList<Etudiant> list;
@@ -33,7 +32,8 @@ class Etudiant implements Comparable<Etudiant>{
 		this.list = new ArrayList<Etudiant>();
 	}
 	
-	public boolean equals(Etudiant obj) {
+	@Override
+	public boolean equals(Object obj) {
 		if(obj.toString().equals(this.toString())){
 			return true;
 		}
@@ -42,12 +42,7 @@ class Etudiant implements Comparable<Etudiant>{
 	
 	@Override
 	protected Etudiant clone() {
-		try {
-			return (Etudiant) super.clone();
-		} catch (Exception e) {
-			
-		}
-		return null;
+		return new Etudiant(this.nom, this.age);
 	}
 
 	@Override
@@ -56,8 +51,13 @@ class Etudiant implements Comparable<Etudiant>{
 	}
 
 	@Override
-	public int compareTo(Etudiant o) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int compareTo(Etudiant arg0) {
+//		if(arg0.age<this.age){
+//			return 1;
+//		}
+		if(arg0.nom.compareToIgnoreCase(this.nom)<0){
+			return 1;
+		}
+		return -1;
 	}
 }
