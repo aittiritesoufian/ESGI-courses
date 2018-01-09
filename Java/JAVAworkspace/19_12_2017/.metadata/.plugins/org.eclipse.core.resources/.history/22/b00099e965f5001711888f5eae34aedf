@@ -1,0 +1,14 @@
+package exo6;
+
+import java.util.ArrayList;
+
+public class MonArrLst extends ArrayList<Eleve> {
+	
+	@Override
+	public String toString() {
+		for (Eleve iterable : iterable) {
+			
+		}
+		return super.toString();
+	}
+}

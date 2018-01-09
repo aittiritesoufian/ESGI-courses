@@ -1,0 +1,15 @@
+package exo6;
+
+import java.util.ArrayList;
+
+public class MonArrLst extends ArrayList<Eleve> {
+	
+	@Override
+	public String toString() {
+		String val = "";
+		for (Eleve eleve : this) {
+			val += eleve.nom;
+		}
+		return val;
+	}
+}

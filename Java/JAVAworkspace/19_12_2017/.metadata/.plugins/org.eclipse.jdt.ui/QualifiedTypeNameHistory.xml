@@ -13,4 +13,13 @@
 <fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="Ex2_2.Etudiant"/>
 <fullyQualifiedTypeName name="Ex2_2.EtudiantComparator"/>
+<fullyQualifiedTypeName name="tp4.Point"/>
+<fullyQualifiedTypeName name="tp4.PointA"/>
+<fullyQualifiedTypeName name="exo2.PointNom"/>
+<fullyQualifiedTypeName name="exo3.Point"/>
+<fullyQualifiedTypeName name="exo3.PointNom"/>
+<fullyQualifiedTypeName name="exo4.PointNom"/>
+<fullyQualifiedTypeName name="exo5.Point"/>
+<fullyQualifiedTypeName name="exo6.MonArrLst"/>
+<fullyQualifiedTypeName name="exo6.MonArrList"/>
 </qualifiedTypeNameHistroy>

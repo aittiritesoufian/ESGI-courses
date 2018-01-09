@@ -1,0 +1,6 @@
+package tp4;
+
+public class PointA extends Point {
+
+	
+}

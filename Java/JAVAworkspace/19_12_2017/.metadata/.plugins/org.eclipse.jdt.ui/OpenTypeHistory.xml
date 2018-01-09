@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+<typeInfo handle="=tp4/\/usr\/lib\/jvm\/java-1.8.0-openjdk-1.8.0.141-1.b16.fc24.x86_64\/jre\/lib\/rt.jar&lt;java.awt(Point.class[Point" modifiers="33" timestamp="1500641466000"/>
+<typeInfo handle="=tp4/src&lt;exo2{Point.java[Point" modifiers="1" timestamp="1515518306000"/>
+<typeInfo handle="=tp4/src&lt;exo3{Point.java[Point" modifiers="1" timestamp="1515518754000"/>
+<typeInfo handle="=tp4/src&lt;exo4{Point.java[Point" modifiers="1" timestamp="1515519226000"/>
+<typeInfo handle="=tp4/\/usr\/lib\/jvm\/java-1.8.0-openjdk-1.8.0.141-1.b16.fc24.x86_64\/jre\/lib\/rt.jar&lt;java.util(ArrayList.class[ArrayList" modifiers="33" timestamp="1500641466000"/>
+</typeInfoHistroy>

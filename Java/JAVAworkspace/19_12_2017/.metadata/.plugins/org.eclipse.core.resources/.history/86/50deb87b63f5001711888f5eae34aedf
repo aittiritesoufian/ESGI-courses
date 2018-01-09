@@ -1,0 +1,9 @@
+package exo4;
+
+public class PointNom extends Point {
+
+	private char nom;
+	
+	
+	
+}

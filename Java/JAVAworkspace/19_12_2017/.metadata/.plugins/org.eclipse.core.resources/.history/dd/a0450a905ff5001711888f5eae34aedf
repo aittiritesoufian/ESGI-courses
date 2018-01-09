@@ -1,0 +1,15 @@
+package tp4;
+
+public class exercice1 {
+
+	public static void main(String[] args) {
+		Point unpoint = new Point();
+		unpoint.initialise(7, 6);
+		
+		Point apoint = new PointA();
+		apoint.initialise(8, 9);
+		
+		apoint.aff
+	}
+
+}

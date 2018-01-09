@@ -1,0 +1,12 @@
+package exo2;
+
+public class PointNom extends Point {
+	
+	private char nom;
+
+	public void setNom(char nom) {
+		this.nom = nom;
+	}
+	
+	
+}
