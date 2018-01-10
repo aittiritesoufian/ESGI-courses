@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exo Plus</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/
+	3.2.1/jquery.min.js"></script>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+			transition:all 1s;
+		}
+		body {
+			width: 100%;
+			height: 100%;
+			background-color:#fff; 
+			transition:all 1s;
+		}
+		div {
+			position: relative;
+			width: auto;
+			height: 100%;
+		}
+		#modal {
+			transition:all 1s;
+			background-color: #444;
+			opacity: 0.9;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			display: none;
+			z-index: 997;
+		}
+		p.left{
+			text-align: right;
+		}
+		#modal-text {
+			bottom: 0;
+			background-color: grey;
+			width: auto;
+			height: 90%;
+			left: 5%;
+			position: absolute;
+			display: none;
+			z-index: 998;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(e){
+			$("#submit").click(function(e){
+				$("#modal-text").css({"display":"block"});
+				$("#modal").css({"display":"block"});
+			})
+			$("#close").click(function(e){
+				$("#modal-text").css({"display":"none"});
+				$("#modal").css({"display":"none"});
+			})
+		})
+	</script>
+</head>
+<body title="cliquez sur le body">
+	<section id="modal"></section>
+	<div id="modal-text">
+		<p class="left" id="close">Close</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div>
+		<form>
+			<label for="nom">Nom</label>
+			<input type="text" name="nom">
+			<label for="prenom">Prénom</label>
+			<input type="text" name="prenom">
+			<label for="mail">Mail</label>
+			<input type="email" name="mail">
+			<p id="submit">Valider</p>
+		</form>
+	</div>
+	<div></div>
+</body>
+</html>
