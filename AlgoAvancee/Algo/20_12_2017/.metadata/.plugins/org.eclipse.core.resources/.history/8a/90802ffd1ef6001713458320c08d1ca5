@@ -1,9 +1,0 @@
-package recherche;
-
-public class Rechercheseq {
-
-	public static void main(String[] args) {
-		int[] a = new Integer[10];
-	}
-
-}

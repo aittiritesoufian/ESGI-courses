@@ -1,0 +1,63 @@
+package recherche;
+
+public class Rechercheseq {
+
+	public static void main(String[] args) {
+		int[] a = new Integer[100];
+		
+		for (int i = 0; i < a.length; i++) {
+			a[i] = i+1;
+		}
+
+		//System.out.println(isHere(35,a));
+		//System.out.println(isHereDicho(35,a));
+		System.out.println(dicho(a, 0, a.length-1));
+	}
+
+	public static boolean isHere(int a, Integer[] b) {
+		int iter = 0;
+		for (int i = 0; i < b.length; i++) {
+			iter++;
+			if(b[i]==a){
+				System.out.println("Nombre d'itérations :"+iter);
+				return true;
+			} else if (b[i]>a){
+				break;
+			}
+		}
+		System.out.println("Nombre d'itérations :"+iter);
+		return false;
+	}
+	
+	public static boolean isHereDicho(int a, Integer[] b){
+		boolean value = false;
+		int pivot = (int)b.length/2;
+		int iter = 0;
+		do{
+			iter++;
+			System.out.println("pivot : "+pivot);
+			if(b[pivot] == a){
+				value = true;
+			}else{
+				if(a<b[pivot]){
+					pivot = (int)pivot/2;
+				}else{
+					pivot = (int)pivot+(pivot/2);
+				}
+			}
+		}while(!value);
+		System.out.println("iterations : "+iter);
+		return value;
+	}
+	
+	public static boolean dicho(int[] tab, int indD, int indF, int val){
+		int pivot = (int)((indD+indF)/2);
+		if(tab[pivot]>val){
+			dico(tab,pivot,indF,val);
+		}else if(tab[pivot]<val){
+			dico(tab,indD,pivot,val);
+		}
+		return true;
+	}
+
+}
