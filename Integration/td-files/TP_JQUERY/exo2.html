@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery 2</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/
+	3.2.1/jquery.min.js"></script>
+	<style type="text/css">
+		body{
+			margin:0;
+		}
+		div{
+			height: 200px;
+			width: 400px;
+			background-color: red;
+			transition:all 1s;
+			top:0;
+			left:0;
+		}
+		nav{
+			padding: 2em 0;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		var couleurs = ['red','orange','yellow','green'];
+		$(document).ready(function(e){
+			$("#btn1").click(function(){
+				$('div').each(function(index){
+					$(this).css("background-color",couleurs[index]);
+				});
+			});
+			$("#btn2").click(function(){
+				$('div').each(function(index){
+					$(this).html("Top : "+Math.round($(this).offset().top));
+				});
+			});
+			$("#btn3").click(function(){
+				$('div').each(function(index){
+					$(this).offset({
+						left : index*100
+					});
+				});
+			});
+			$("#btn4").click(function(){
+				$('div').each(function(index){
+					$(this).height("100px");
+					$(this).width("100px");
+				});
+			});
+			$("#reset").click(function(){
+				$('div').each(function(index){
+					$(this).offset({
+						left:0
+					});
+					$(this).css({
+						"width":"400px",
+						"height":"200px",
+						"background-color":"red"
+					});
+					$(this).html("");
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<nav>
+		<button id="btn1">Couleurs</button>
+		<button id="btn2">Affichage Top</button>
+		<button id="btn3">Décalage de 100px à droite</button>
+		<button id="btn4">Redimensionnement</button>
+		<button id="reset">Reset</button>
+	</nav>
+	<main>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</main>
+</body>
+</html>
