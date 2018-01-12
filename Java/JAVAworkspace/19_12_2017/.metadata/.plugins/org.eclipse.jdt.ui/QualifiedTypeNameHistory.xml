@@ -4,7 +4,6 @@
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.awt.print.Printable"/>
 <fullyQualifiedTypeName name="Ex1.Etudiant"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="Ex2.Etudiant"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
@@ -22,4 +21,13 @@
 <fullyQualifiedTypeName name="exo5.Point"/>
 <fullyQualifiedTypeName name="exo6.MonArrLst"/>
 <fullyQualifiedTypeName name="exo6.MonArrList"/>
+<fullyQualifiedTypeName name="java.util.TreeMap"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="java.lang.IncompatibleClassChangeError"/>
+<fullyQualifiedTypeName name="java.util.TreeSet"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>
