@@ -3,6 +3,10 @@
 class IndexController{
 
 	public function indexAction($params){
-		$v = new View("default","front");	
+		$name = "soufian";
+
+		$v = new View("default","front");
+
+		$v->assign("name", $name);
 	}
 }

@@ -4,6 +4,7 @@ class View{
 
 	private $v;
 	private $t;
+	private $data = [];
 
 	function __construct($vue = "default", $template = "front"){
 
@@ -19,7 +20,13 @@ class View{
 		}
 	}
 
+	public function assign($key,$value){
+		$this->data[$key] = $value;
+	}
+
 	function __destruct(){
+		global $a, $c;
+		extract($this->data);
 		include "views/templates/".$this->t;
 	}
 }
