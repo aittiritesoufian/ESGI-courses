@@ -7,7 +7,15 @@ class UserController{
 	}
 
 	public function addAction($params){
+		$name = "Test hello";
 		$v = new View("ajout","front");
+		$v->assign("name", $name);
+
+		$user = new User();
+		$user->setLastname("AIT TIRITE");
+		$user->setFirstname("Soufian");
+		$user->setEmail("Soufian");
+		$user->save();
 	}
 
 	public function deleteAction($params){

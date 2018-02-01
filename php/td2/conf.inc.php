@@ -1,10 +1,11 @@
 <?php
 
-define("DBUSER","root");
-define("DBHOST","localhost");
+define("DBUSER","rootSoufian");
+define("DBHOST","192.168.99.1");
 define("DBPWD","root");
 define("DBPORT","3306");
 define("DBDRIVER","mysql");
+define("DBNAME","envdocker");
 
 define("DS","/");
 
