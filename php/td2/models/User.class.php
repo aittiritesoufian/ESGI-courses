@@ -46,7 +46,7 @@ class User extends BaseSQL{
 
     public function setPwd($pwd)
     {
-        $this->pwd = password_hash($pwd, PASSWORD_DEFAULT);
+        $this->pwd = $pwd;//password_hash($pwd, PASSWORD_DEFAULT);
     }
 
     public function getToken()

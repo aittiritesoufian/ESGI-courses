@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>mon Projet MVC</title>
+  <meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="<?php echo DIRNAME; ?>bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo DIRNAME; ?>bootstrap/css/jumbotron.css">
 </head>

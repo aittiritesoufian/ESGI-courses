@@ -14,7 +14,9 @@ class UserController{
 		$user = new User();
 		$user->setLastname("AIT TIRITE");
 		$user->setFirstname("Soufian");
-		$user->setEmail("Soufian");
+		$user->setEmail("soufian@soufian.esgi");
+		$user->setPwd("blablabla");
+		$user->setStatus(1);
 		$user->save();
 	}
 

@@ -7,9 +7,10 @@ class BaseSQL {
 	private $columns;
 
 	public function __construct(){
-		echo "connexion";
+		echo "connexion<br>";
 		try{
 			$this->pdo = new PDO(DBDRIVER.":host=".DBHOST.";dbname=".DBNAME,DBUSER,DBPWD);
+			echo "connecté<br>";
 		} catch(Exception $e){
 			die('Erreur SQL : '.$e->getMessage());
 		}
@@ -31,11 +32,22 @@ class BaseSQL {
 		} else {
 			//INSERT
 			unset($this->columns['id']);
-			$query = $this->pdo->prepare("INSERT INTO ".$this->table."
+			try {
+				$query = $this->pdo->prepare("INSERT INTO ".$this->table."
 					(".implode(",", array_keys($this->columns)).")
 					VALUES (:".implode(",:", array_keys($this->columns)).");
-				");
-			$query->execute($this->columns);
+					");
+				$query->execute($this->columns);
+				var_dump("INSERT INTO ".$this->table."
+					(".implode(",", array_keys($this->columns)).")
+					VALUES (:".implode(",:", array_keys($this->columns)).");
+					");
+				echo "<br>";
+				var_dump($this->columns);
+				echo "inséré";
+			} catch (Exception $e) {
+				die('Error : '.$e->getMessage());
+			}
 		}
 	}
 }
