@@ -14,6 +14,8 @@ spl_autoload_register("myAutoLoader");
 
 $uri = substr(urldecode($_SERVER['REQUEST_URI']), strlen(dirname($_SERVER['SCRIPT_NAME'])));
 
+$uri = ltrim($uri,"/");
+
 $uri = explode("?", $uri);
 $uriExplode = explode("/", $uri[0]);
 
@@ -27,7 +29,6 @@ $a = strtolower($a)."Action";
 
 unset($uriExplode[0]);
 unset($uriExplode[1]);
-unset($uriExplode[2]);
 //params
 $params = [
 			"POST"=>$_POST,
