@@ -32,4 +32,11 @@ Pour éviter que le css ne plante, il faut réimporter le css du thème parent:
 ```
 @import url('../nomDuDossierDuThemeParent/style.css');
 ```
+Il y à des function native de wordpress a appeler dans le thème afin de pouvoir appeler des éléments:
 
+```
+get_header();// récupère le fichier header.php du thème ou de son parent si il n'existe pas.
+get_footer();// récupère le fichier footer.php du thème ou de son parent si il n'existe pas.
+```
+
+/!\ si on appel the_content() avant the_post(); on ne peux pas récupérer le contenu.
