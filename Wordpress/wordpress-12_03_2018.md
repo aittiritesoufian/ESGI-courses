@@ -40,3 +40,24 @@ get_footer();// récupère le fichier footer.php du thème ou de son parent si i
 ```
 
 /!\ si on appel the_content() avant the_post(); on ne peux pas récupérer le contenu.
+
+Pour afficher déclencher l'affichage du bouton "Read More" on ajoute le code suivant dans le contenu de l'article:
+```
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.<!-- more --> Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+```
+
+Pour déclarer toutes les fonctionnalités du thème (menus, widgets etc...), on créer un fichier functions.php dans lequel on insère l'ensemble des fonctions à executer.
+
+Pour executer une fonciton, on appel add_action qui prendra en paramètre un event (moment à laquel executer la fonction), ainsi que le nom de la fonction à executer.
+```
+add_action('event','functionToExecute');
+```
+
+Requis pour le projet:
+-Avoir des paramétrages en back.
+-Avoir un rendu en front.
