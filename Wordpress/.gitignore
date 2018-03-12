@@ -1,3 +1,3 @@
 www/
 !www/.gitkeep
-!www/wp-content/themes/mytheme
+!www/wp-content/themes/mytheme/*
