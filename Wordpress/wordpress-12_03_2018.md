@@ -58,6 +58,41 @@ Pour executer une fonciton, on appel add_action qui prendra en paramètre un eve
 add_action('event','functionToExecute');
 ```
 
-Requis pour le projet:
+Requis pour le projet à la soutenance:
 -Avoir des paramétrages en back.
 -Avoir un rendu en front.
+
+Pour ajouter un short code on utilise la méthode add_shortcode(), elle prend en premier paramètre le label utilisé dans le shortcode, en second l'appel de la fonction à exécuter:
+
+```php
+add_shortcode('test','test_func'); 
+
+function test_func(){
+	echo '<p>Test du shortcode réussi !</p>';
+} 
+```
+
+## Création d'un plugin
+
+Par défaut le fichier utiliser par wordpress est le fichier portant le même nom que le répertoire du plugin.
+
+```
+monplugin/monplugin.php
+```
+
+
+
+Ajout d'un message dans le wp-footer automatiquement à l'affichage du plugin:
+
+```PHP
+add_action("wp_footer",'Add_Text');
+
+function Add_Text(){
+	echo "<p>Quand le footer est chargé et le plugin activé, on affiche ce paragraphe.</p>";
+}
+```
+
+On peux faire la même chose avec le wp_head afin d'ajouter du CSS à charger.
+
+Pour ne pas avoir à insérer trop de contenu dans le fichier de fonction par défaut du plugin, on peux faire des includes d'autres fichiers.
+
