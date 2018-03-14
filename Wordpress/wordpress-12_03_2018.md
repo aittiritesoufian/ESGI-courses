@@ -8,6 +8,10 @@ dev d'un site vitrine avec un thème perso from scratch
 
 + dev d'un plugin (fonctionnalité supplémentaire que n'intègre pas wordpress).
 
+Requis pour le projet à la soutenance:
+-Avoir des paramétrages en back.
+-Avoir un rendu en front.
+
 Fichier indispensable pour un thème wordpress:
 
 -index .php
@@ -58,10 +62,6 @@ Pour executer une fonciton, on appel add_action qui prendra en paramètre un eve
 add_action('event','functionToExecute');
 ```
 
-Requis pour le projet à la soutenance:
--Avoir des paramétrages en back.
--Avoir un rendu en front.
-
 Pour ajouter un short code on utilise la méthode add_shortcode(), elle prend en premier paramètre le label utilisé dans le shortcode, en second l'appel de la fonction à exécuter:
 
 ```php
@@ -95,4 +95,14 @@ function Add_Text(){
 On peux faire la même chose avec le wp_head afin d'ajouter du CSS à charger.
 
 Pour ne pas avoir à insérer trop de contenu dans le fichier de fonction par défaut du plugin, on peux faire des includes d'autres fichiers.
+
+Pour ajouter un type de post (portfolio, événements,...):
+
+```PHP
+register_post_type($args);
+```
+
+Les metabox permette d'ajouter des champs supplémentaires à utiliser dans le notre post type par exemple.
+
+Les Taxonomies représentent les catégories, ou tag que l'on peux ajouter à nos post_type.
 
