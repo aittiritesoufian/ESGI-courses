@@ -2,7 +2,7 @@
 
 ## Evolution de l'informatique depuis 50 ans
 
-####1980 : Les réseaux sont peu développés,
+#### 1980 : Les réseaux sont peu développés,
 
 Les MAINFRAME sont des super-calculateurs utilisés pour des calculs scientifiques ou du traitement de texte.
 
@@ -23,7 +23,7 @@ Client/serveur ---REPONSE---> Client/Serveur ---REPONSE---> Client/serveur
 
 Architectures distribuées : (AOL, Alice, Wanadoo, Free, ...).
 
-####1991 : Création du langage HTML (MSN, SkyBlog, ...).
+#### 1991 : Création du langage HTML (MSN, SkyBlog, ...).
 
 #### 2000 : Apparition de la virtualisation (Plusieurs machines virtuelles sur une même machine Serveur).
 
