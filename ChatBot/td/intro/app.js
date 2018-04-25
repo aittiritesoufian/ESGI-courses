@@ -22,7 +22,11 @@ var bot = new builder.UniversalBot(connector, [
         session.beginDialog('greetings');
     },
     function(session, results){
-        session.endDialog(`Hello ${results.response} ;)`);
+        if(session.userData.name){
+            session.endDialog(`Hello ${session.userData.name} ;)`);
+        } else {
+            session.endDialog(`Hello ${results.response} ;)`);
+        }
     }
 ]);
 
@@ -30,11 +34,19 @@ var bot = new builder.UniversalBot(connector, [
 
 bot.dialog('greetings', [
     // step 1
-    function(session) {
-        builder.Prompts.text(session,'what is your name ?')
+    function(session, args, next) {
+        if(session.userData.name){
+            next();
+        } else {
+            builder.Prompts.text(session,'what is your name ?')
+        }
     },
     // step 2
     function(session,results) {
+        if(session.userData.name == null){
+            session.userData.name = results.response;
+            session.save();
+        }
         session.endDialogWithResult(results);
     }
 ])
