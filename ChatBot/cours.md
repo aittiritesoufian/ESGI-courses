@@ -20,3 +20,12 @@ Chaque fonction envoi à la fonction suivante les résultats qu'elle récupère.
 
 stockage de données dans UserData, DialogData, on utilisera la fonction next().
 
+#### Style de dialogs:
+
+prompt.choice()
+
+si au format auto dépend de :
+
+1. du contenu
+2. du channel
+

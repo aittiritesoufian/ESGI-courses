@@ -20,14 +20,15 @@ server.post('/api/messages', connector.listen());
 var bot = new builder.UniversalBot(connector, [
     function(session) {
         session.send("You said %s", session.message.text);
-        session.beginDialog('greetings', session.userData.profile);
-    },
-    function(session, results){
-        if(!session.userData.profile){
-            session.userData.profile = results.response;
-        }
-        session.send(`Hello ${session.userData.profile.name} ;)`);
-    }
+        // session.beginDialog('greetings', session.userData.profile);
+        session.beginDialog('menu', session.userData.profile);
+     },
+    // function(session, results){
+    //     if(!session.userData.profile){
+    //         session.userData.profile = results.response;
+    //     }
+    //     session.send(`Hello ${session.userData.profile.name} ;)`);
+    // }
 ]).set('storage', inMemoryStorage);
 
 //dialogues
@@ -49,4 +50,44 @@ bot.dialog('greetings', [
         }
         session.endDialogWithResult({response: session.dialogData.profile});
     }
-])
+]);
+
+var menuItems = {
+    "toto": {
+        item: 'dialog1'
+    },
+    "titi": {
+        item: 'dialog2'
+    },
+    "tutu": {
+        item: 'dialog3'
+    }
+}
+bot.dialog('menu', [
+    function(session){
+        builder.Prompts.choice(session,'Please select an option', menuItems, {listStyle: 3})
+    },
+    function(session,results) {
+        var choice = results.response.entity;
+        var item = menuItems[choice].item;
+        session.beginDialog(item);
+    }
+]);
+
+bot.dialog('dialog1', [
+    function(session){
+        session.send("You are inside dialog 1")
+    }
+]);
+
+bot.dialog('dialog2', [
+    function(session){
+        session.send("You are inside dialog 2")
+    }
+]);
+
+bot.dialog('dialog3', [
+    function(session){
+        session.send("You are inside dialog 3")
+    }
+]);
