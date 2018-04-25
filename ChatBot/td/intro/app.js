@@ -3,6 +3,10 @@ var restify = require("restify");
 var builder = require('botbuilder');
 var inMemoryStorage = new builder.MemoryBotStorage();
 
+//spaceX
+var SpaceXAPI = require('SpaceX-API-Wrapper');
+let SpaceX = new SpaceXAPI();
+
 //server
 var server = restify.createServer();
 server.listen(process.env.PORT, function(){
@@ -53,7 +57,7 @@ bot.dialog('greetings', [
 ]);
 
 var menuItems = {
-    "toto": {
+    "Compagny Infos": {
         item: 'dialog1'
     },
     "titi": {
@@ -76,7 +80,10 @@ bot.dialog('menu', [
 
 bot.dialog('dialog1', [
     function(session){
-        session.send("You are inside dialog 1")
+        SpaceX.getCompanyInfo(function(err, info){
+            // console.log(info);
+            session.send(JSON.stringify(info));
+        });
     }
 ]);
 
