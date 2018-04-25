@@ -1,6 +1,7 @@
 require('dotenv').config();
 var restify = require("restify");
 var builder = require('botbuilder');
+var inMemoryStorage = new builder.MemoryBotStorage();
 
 //server
 var server = restify.createServer();
@@ -19,34 +20,33 @@ server.post('/api/messages', connector.listen());
 var bot = new builder.UniversalBot(connector, [
     function(session) {
         session.send("You said %s", session.message.text);
-        session.beginDialog('greetings');
+        session.beginDialog('greetings', session.userData.profile);
     },
     function(session, results){
-        if(session.userData.name){
-            session.endDialog(`Hello ${session.userData.name} ;)`);
-        } else {
-            session.endDialog(`Hello ${results.response} ;)`);
+        if(!session.userData.profile){
+            session.userData.profile = results.response;
         }
+        session.send(`Hello ${session.userData.profile.name} ;)`);
     }
-]);
+]).set('storage', inMemoryStorage);
 
 //dialogues
 
 bot.dialog('greetings', [
     // step 1
-    function(session, args, next) {
-        if(session.userData.name){
-            next();
+    function(session, results, next) {
+        session.dialogData.profile = results || {};
+        if(!session.dialogData.profile.name){
+            builder.Prompts.text(session,'what is your name ?');
         } else {
-            builder.Prompts.text(session,'what is your name ?')
+            next();
         }
     },
     // step 2
     function(session,results) {
-        if(session.userData.name == null){
-            session.userData.name = results.response;
-            session.save();
+        if(results.response){
+            session.dialogData.profile.name = results.response;
         }
-        session.endDialogWithResult(results);
+        session.endDialogWithResult({response: session.dialogData.profile});
     }
 ])
