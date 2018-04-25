@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "adaptivecards": "^1.0.0",
     "botbuilder": "^3.14.1",
     "dotenv": "^5.0.1",
     "nodemon": "^1.17.3",

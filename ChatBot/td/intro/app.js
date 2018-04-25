@@ -82,7 +82,44 @@ bot.dialog('dialog1', [
     function(session){
         SpaceX.getCompanyInfo(function(err, info){
             // console.log(info);
-            session.send(JSON.stringify(info));
+            var adaptativeCard = {
+                "type": "AdaptativeCard",
+                "text": info.name,
+                "attachments": [
+                    {
+                      "contentType": "application/vnd.microsoft.card.adaptive",
+                      "content": {
+                        "type": "AdaptiveCard",
+                        "version": "1.0",
+                        "body": [
+                          {
+                            "type": "TextBlock",
+                            "text": info.summary,
+                            "size": "large"
+                          },
+                          {
+                            "type": "TextBlock",
+                            "text": "*Sincerely yours,*"
+                          },
+                          {
+                            "type": "TextBlock",
+                            "text": "Adaptive Cards",
+                            "separation": "none"
+                          }
+                        ],
+                        "actions": [
+                          {
+                            "type": "Action.OpenUrl",
+                            "url": "http://spacex.com/",
+                            "title": "Learn More"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                
+            }
+            session.send(adaptativeCard);
         });
     }
 ]);
