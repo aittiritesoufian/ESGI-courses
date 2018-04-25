@@ -1,4 +1,6 @@
-on à un dialogue dans lequel il y à des étapes.
+On à un dialogue dans lequel il y à des étapes.
+
+Chaque étape est une fonction
 
 La conversation c'est un ensemble de dialogues sous forme de pile
 
@@ -11,4 +13,6 @@ La fonction de base est :
 ```JS
 var bot = new builder.UniversalBot(connector, []);
 ```
+
+Chaque fonction envoi à la fonction suivante les résultats qu'elle récupère.
 

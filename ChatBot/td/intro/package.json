@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "botbuilder": "^3.14.1",
-    "nodemon": "^1.17.3"
+    "dotenv": "^5.0.1",
+    "nodemon": "^1.17.3",
+    "restify": "^7.1.1"
   }
 }
