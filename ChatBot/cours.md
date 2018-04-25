@@ -16,3 +16,7 @@ var bot = new builder.UniversalBot(connector, []);
 
 Chaque fonction envoi à la fonction suivante les résultats qu'elle récupère.
 
+#### Stockage de données
+
+stockage de données dans UserData, DialogData, on utilisera la fonction next().
+
