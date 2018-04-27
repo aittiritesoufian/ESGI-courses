@@ -63,9 +63,6 @@ var menuItems = {
     },
     "SpaceX - Dernier lancement": {
         item: 'dialog2'
-    },
-    "tutu": {
-        item: 'dialog3'
     }
 }
 //Dialogue du menu de sélection
