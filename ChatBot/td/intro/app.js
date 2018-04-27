@@ -23,16 +23,16 @@ server.post('/api/messages', connector.listen());
 //Universal bot
 var bot = new builder.UniversalBot(connector, [
     function(session) {
-        session.send("You said %s", session.message.text);
-        // session.beginDialog('greetings', session.userData.profile);
-        session.beginDialog('menu', session.userData.profile);
+        session.send("Hi !", session.message.text);
+        session.beginDialog('greetings', session.userData.profile);
      },
-    // function(session, results){
-    //     if(!session.userData.profile){
-    //         session.userData.profile = results.response;
-    //     }
-    //     session.send(`Hello ${session.userData.profile.name} ;)`);
-    // }
+    function(session, results){
+        if(!session.userData.profile){
+            session.userData.profile = results.response;
+        }
+        session.send(`Bienvenue sur le bot ${session.userData.profile.name} ;)`);
+        session.beginDialog('menu', session.userData.profile);
+    }
 ]).set('storage', inMemoryStorage);
 
 //dialogues
@@ -42,7 +42,7 @@ bot.dialog('greetings', [
     function(session, results, next) {
         session.dialogData.profile = results || {};
         if(!session.dialogData.profile.name){
-            builder.Prompts.text(session,'what is your name ?');
+            builder.Prompts.text(session,'Quel est votre nom ?');
         } else {
             next();
         }
@@ -56,28 +56,34 @@ bot.dialog('greetings', [
     }
 ]);
 
+//tableau des éléments du menu
 var menuItems = {
-    "Compagny Infos": {
+    "SpaceX - Informations de la société": {
         item: 'dialog1'
     },
-    "titi": {
+    "SpaceX - Dernier lancement": {
         item: 'dialog2'
     },
     "tutu": {
         item: 'dialog3'
     }
 }
+//Dialogue du menu de sélection
 bot.dialog('menu', [
     function(session){
-        builder.Prompts.choice(session,'Please select an option', menuItems, {listStyle: 3})
+        builder.Prompts.choice(session,'Choisissez une action à réaliser : ', menuItems, {listStyle: 3})
     },
     function(session,results) {
         var choice = results.response.entity;
         var item = menuItems[choice].item;
         session.beginDialog(item);
+    },
+    function(session,results) {
+        session.send(results);
     }
 ]);
 
+//Dialogue des infos de SpaceX
 bot.dialog('dialog1', [
     function(session){
         SpaceX.getCompanyInfo(function(err, info){
@@ -119,19 +125,74 @@ bot.dialog('dialog1', [
                   ]
                 
             }
-            session.send(adaptativeCard);
+            session.endDialogWithResult(adaptativeCard);
         });
     }
 ]);
 
+//Dialogue des prochains lancements SpaceX
+const https = require('https');
 bot.dialog('dialog2', [
     function(session){
-        session.send("You are inside dialog 2")
+        https.get('https://api.spacexdata.com/v2/launches/latest', (resp) => {
+          let data = '';
+
+          resp.on('data', (chunk) => {
+            data += chunk;
+          });
+
+          resp.on('end', () => {
+            data = JSON.parse(data);
+            var adaptativeCard = {
+                "type": "message",
+                "text": "Numéro de lancement : "+data.flight_number,
+                "attachments": [
+                    {
+                      "contentType": "application/vnd.microsoft.card.adaptive",
+                      "content": {
+                        "type": "AdaptiveCard",
+                        "version": "1.0",
+                        "body": [
+                          {
+                            "type": "TextBlock",
+                            "text": data.details,
+                            "size": "large"
+                          },
+                          {
+                            "type": "TextBlock",
+                            "text": "Date de lancement : "+data.launch_date_local,
+                            "separation": "none"
+                          },
+                          {
+                            "type": "TextBlock",
+                            "text": "Site de lancement : "+data.launch_site.site_name_long,
+                            "separation": "none"
+                          }
+                        ],
+                        "actions": [
+                          {
+                            "type": "Action.OpenUrl",
+                            "url": data.links.article_link,
+                            "title": "Learn More"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                
+            }
+            session.endDialogWithResult(adaptativeCard);
+          });
+
+        }).on("error", (err) => {
+          session.endDialogWithResult("Error: " + err.message);
+        });
     }
 ]);
 
+
 bot.dialog('dialog3', [
     function(session){
-        session.send("You are inside dialog 3")
+        session.endDialogWithResult("You are inside dialog 3")
     }
 ]);

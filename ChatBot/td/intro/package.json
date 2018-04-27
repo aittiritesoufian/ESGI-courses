@@ -12,7 +12,9 @@
     "adaptivecards": "^1.0.0",
     "botbuilder": "^3.14.1",
     "dotenv": "^5.0.1",
+    "https": "^1.0.0",
     "nodemon": "^1.17.3",
+    "querystring": "^0.2.0",
     "restify": "^7.1.1",
     "spacex-api-wrapper": "^1.0.1"
   }
