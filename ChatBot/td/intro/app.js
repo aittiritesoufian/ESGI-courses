@@ -83,7 +83,7 @@ bot.dialog('dialog1', [
         SpaceX.getCompanyInfo(function(err, info){
             // console.log(info);
             var adaptativeCard = {
-                "type": "AdaptativeCard",
+                "type": "message",
                 "text": info.name,
                 "attachments": [
                     {
@@ -99,11 +99,11 @@ bot.dialog('dialog1', [
                           },
                           {
                             "type": "TextBlock",
-                            "text": "*Sincerely yours,*"
+                            "text": info.founder
                           },
                           {
                             "type": "TextBlock",
-                            "text": "Adaptive Cards",
+                            "text": info.headquarters.city+", "+info.headquarters.state,
                             "separation": "none"
                           }
                         ],
