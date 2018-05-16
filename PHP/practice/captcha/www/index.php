@@ -30,9 +30,9 @@ $fontsDir = glob("fonts/*.ttf");
 //Caractères couleurs aléatoires
 //Caractères tailles aléatoires
 //Caractères positions aléatoires
-$textcolor = imagecolorallocate($image, rand(0,100), rand(0,100), rand(0,100));
 $x = rand(10,15);
 for ( $i=0; $i<strlen($captcha); $i++ ) {
+	$textcolor = imagecolorallocate($image, rand(0,100), rand(0,100), rand(0,100));
 	$size = rand(25,35);
 	$angle = rand(-50,50);
 	$y = rand(40,$imgheight-40);
