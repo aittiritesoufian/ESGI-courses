@@ -18,7 +18,8 @@ public class ArbreConstructor {
 		System.out.println(a121.prefix());
 		
 		System.out.println(a121.estEquilibre());
-
+Arbre test=new Arbre();
+System.out.println(test.rotationGauche().prefix());
 	}
 
 }
