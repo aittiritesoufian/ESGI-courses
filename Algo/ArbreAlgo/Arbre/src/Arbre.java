@@ -43,13 +43,13 @@ public class Arbre {
 		this.gauche = gauche;
 	}
 	
-	public boolean estVide() {
+	public boolean estVide() {// OK
 		if(this.droit == null && this.gauche == null)
 			return true;
 		return false;
 	}
 	
-	public String prefix() {
+	public String prefix() {//OK
 		String value = String.valueOf(this.racine)+" ";
 		if(this.gauche != null)
 			value += gauche.prefix();
@@ -58,21 +58,21 @@ public class Arbre {
 		return value;
 	}
 	
-	public Arbre rotationGauche() {
+	public Arbre rotationGauche() { //OK
 		Arbre d = this.droit;
-		this.droit = this.droit.getGauche();
+		this.droit = d.getGauche();
 		d.setGauche(this);
 		return this;
 	}
 	
-	public Arbre rotationDroite() {
+	public Arbre rotationDroite() { //OK
 		Arbre g = this.gauche;
-		this.gauche = this.gauche.getDroit();
+		this.gauche = g.getDroit();
 		g.setDroit(this);
 		return this;
 	}
 	
-	public int taille() {
+	public int taille() {//OK
 		int taille = 1;
 		if(this.gauche != null)
 			taille += gauche.taille();
@@ -81,7 +81,7 @@ public class Arbre {
 		return taille;
 	}
 
-	public int hauteur() {
+	public int hauteur() { //OK
 		int hauteur = 0;
 		if(this.droit != null || this.gauche != null)
 			hauteur += 1;
@@ -92,7 +92,7 @@ public class Arbre {
 		return hauteur;
 	}
 	
-	public boolean estEquilibre() {
+	public boolean estEquilibre() {//OK
 		Integer hdroit = -1;
 		Integer hgauche = -1;
 		
@@ -104,10 +104,10 @@ public class Arbre {
 		Integer val = hdroit - hgauche;
 		
 		if(1 >= val && val >= -1) {
-//			if(this.droit != null && !this.droit.estEquilibre())
-//				return false;
-//			if(this.gauche != null && !this.gauche.estEquilibre())
-//				return false;
+			if(this.droit != null && !this.droit.estEquilibre())
+				return false;
+			if(this.gauche != null && !this.gauche.estEquilibre())
+				return false;
 			return true;
 		}
 		return false;

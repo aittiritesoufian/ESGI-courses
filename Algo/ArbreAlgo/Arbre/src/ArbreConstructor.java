@@ -8,14 +8,17 @@ public class ArbreConstructor {
 		
 		Arbre a121 = new Arbre(121);
 		Arbre a107 = new Arbre(107, a56, a121);
+		System.out.println(a107.prefix());
+		System.out.println(a107.estEquilibre());
+		System.out.println(a121.prefix());
+		
+		a107 = a107.rotationGauche();
+		
+		System.out.println(a107.prefix());
+		System.out.println(a121.prefix());
+		
+		System.out.println(a121.estEquilibre());
 
-		System.out.println(a56.prefix());
-		System.out.println(a107.prefix());
-		
-		a107.rotationGauche();
-		
-		System.out.println(a56.prefix());
-		System.out.println(a107.prefix());
 	}
 
 }
