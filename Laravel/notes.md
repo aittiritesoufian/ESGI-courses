@@ -26,7 +26,14 @@ artisan migrate
 artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvider" --tag="config"
 ```
 
+#### Librairie pour le BackOffice (voyager)
 
+```bash
+composer require tcg/voyager
+
+artisan voyager:install
+
+```
 
 
 
@@ -50,5 +57,12 @@ route:
 
 artisan route:list -> permet de récupérer toute les routes
 
+Grouper des routes et les restreindre (middleware) :
 
-
+```PHP
+Route::middleware('auth')->group( function() {
+    Route::post('/api','apiController@index')->name("admin");
+    Route::get('/admin','adminController@index')->name("admin");
+    
+});
+```
