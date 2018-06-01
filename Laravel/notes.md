@@ -3,27 +3,9 @@
 
 
 ```bash
-composer create-project --prefer-dist laravel/laravel Laravel
+composer create-project --prefer-dist laravel/laravel monannonce
 
-artisan make:migration create_annonce_table
-
-artisan make:migration create_categories_table
-
-artisan make:migration create_rating_table
-```
-
-#### Librairie pour la gestion des médias
-
-https://docs.spatie.be/laravel-medialibrary/v7/installation-setup
-
-```bash
-composer require spatie/laravel-medialibrary:^7.0.0
-
-artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvider" --tag="migrations"
-
-artisan migrate
-
-artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvider" --tag="config"
+vagrant reload --provision
 ```
 
 #### Librairie pour le BackOffice (voyager)
@@ -31,8 +13,36 @@ artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvid
 ```bash
 composer require tcg/voyager
 
-artisan voyager:install
+artisan voyager:install --with-dummy
 
+```
+
+Si erreur à la fin de la dernière commande sur l'insertion du link, alors executer la commande suivante depuis l'invite de commande en dehors de la machine virtuelle:
+
+```bash
+php artisan storage:link
+```
+
+Création des tables annonce et rating avec le fichier de migration, exécuter la commande:
+
+```bash
+php artisan migrate
+```
+
+La table annonce utilisera les catégories existante avec voyager pour la création du contenu.
+
+Création du BREAD bloquée car le modèle n'existe pas, on exécute la commande suivante pour le créer manuellement:
+
+```bash
+artisan make:model Annonce
+```
+
+___
+
+```bash
+artisan make:migration create_annonce_table
+
+artisan make:migration create_rating_table
 ```
 
 
@@ -53,8 +63,6 @@ migrate
 
 code:models
 
-route:
-
 artisan route:list -> permet de récupérer toute les routes
 
 Grouper des routes et les restreindre (middleware) :
@@ -66,3 +74,4 @@ Route::middleware('auth')->group( function() {
     
 });
 ```
+ history | grep artisan

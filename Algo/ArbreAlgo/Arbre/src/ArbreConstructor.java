@@ -2,24 +2,48 @@
 public class ArbreConstructor {
 
 	public static void main(String[] args) {
-		Arbre a13 = new Arbre(13);
-		Arbre a100 = new Arbre(100);
-		Arbre a56 = new Arbre(56, a13, a100);
 		
-		Arbre a121 = new Arbre(121);
-		Arbre a107 = new Arbre(107, a56, a121);
-		System.out.println(a107.prefix());
-		System.out.println(a107.estEquilibre());
-		System.out.println(a121.prefix());
+		Arbre a500 = new Arbre(500);
+		Arbre a14 = new Arbre(14);
+		Arbre a300 = new Arbre(300);
+		Arbre a473 = new Arbre(473);
+		Arbre a211 = new Arbre(211);
+		Arbre a336 = new Arbre(336);
+		Arbre a352 = new Arbre(352);
+		Arbre a702 = new Arbre(702);
+		Arbre a658 = new Arbre(658);
 		
-		a107 = a107.rotationGauche();
+		a500.setGauche(a14);
+		a500.setDroit(a702);
 		
-		System.out.println(a107.prefix());
-		System.out.println(a121.prefix());
+		a702.setGauche(a658);
 		
-		System.out.println(a121.estEquilibre());
-Arbre test=new Arbre();
-System.out.println(test.rotationGauche().prefix());
+		a14.setDroit(a300);
+		
+		a300.setGauche(a211);
+		a300.setDroit(a473);
+		
+		a473.setGauche(a336);
+		
+		a336.setDroit(a352);
+		
+		// rotations
+		
+		System.out.println(a500.estEquilibre());
+		System.out.println(a500.prefix());
+
+		a336.rotationGauche();
+		System.out.println(a500.estEquilibre());
+		System.out.println(a500.prefix());
+		
+		a473.rotationDroite();
+		System.out.println(a500.estEquilibre());
+		System.out.println(a500.prefix());
+		
+		a14.rotationGauche();
+		System.out.println(a500.estEquilibre());
+		System.out.println(a500.prefix());
+		
 	}
 
 }

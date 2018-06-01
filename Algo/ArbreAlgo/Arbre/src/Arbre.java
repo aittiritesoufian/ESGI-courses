@@ -4,12 +4,14 @@ public class Arbre {
 	private Integer racine;
 	private Arbre droit;
 	private Arbre gauche;
+	private Arbre parent;
 
-	public Arbre(Integer racine, Arbre gauche, Arbre droit) {
+	public Arbre(Integer racine, Arbre gauche, Arbre droit, Arbre parent) {
 		super();
 		this.racine = racine;
 		this.droit = droit;
 		this.gauche = gauche;
+		this.parent = parent;
 	}
 
 	public Arbre() {
@@ -24,6 +26,15 @@ public class Arbre {
 		this.racine = racine;
 		this.droit = null;
 		this.gauche = null;
+		this.parent = null;
+	}
+
+	public Arbre getParent() {
+		return parent;
+	}
+
+	public void setParent(Arbre parent) {
+		this.parent = parent;
 	}
 
 	public Integer getRacine() {
@@ -39,6 +50,7 @@ public class Arbre {
 	}
 
 	public void setDroit(Arbre droit) {
+		droit.setParent(this);
 		this.droit = droit;
 	}
 
@@ -47,6 +59,7 @@ public class Arbre {
 	}
 
 	public void setGauche(Arbre gauche) {
+		gauche.setParent(this);
 		this.gauche = gauche;
 	}
 
@@ -58,6 +71,9 @@ public class Arbre {
 
 	public String prefix() {// OK
 		String value = String.valueOf(this.racine) + " ";
+//		if(this.getParent() != null) {
+//			value += "parent : " +this.getParent().getRacine()+ " / ";
+//		}
 		if (this.gauche != null)
 			value += gauche.prefix();
 		if (this.droit != null)
@@ -68,7 +84,16 @@ public class Arbre {
 	public Arbre rotationGauche() { // OK
 		if (this.droit != null) {
 			Arbre d = this.droit;
+			Arbre p = this.parent;
 			this.droit = d.getGauche();
+			if(this.getParent().getDroit() != null && this.getParent().getDroit().getRacine() == this.racine) {
+				this.getParent().setDroit(d);
+//				System.out.println("first------------------");
+			}
+			if(this.getParent().getGauche() != null && this.getParent().getGauche().getRacine() == this.racine) {
+				this.getParent().setGauche(d);
+//				System.out.println("second------------------");
+			}
 			d.setGauche(this);
 		}
 		return this;
@@ -77,7 +102,13 @@ public class Arbre {
 	public Arbre rotationDroite() { // OK
 		if (this.gauche != null) {
 			Arbre g = this.gauche;
+			Arbre p = this.parent;
 			this.gauche = g.getDroit();
+			if(this.getParent().getDroit() != null && this.getParent().getDroit().getRacine() == this.racine) {
+				this.getParent().setDroit(g);
+			} else {
+				this.getParent().setGauche(g);
+			}
 			g.setDroit(this);
 		}
 		return this;
@@ -94,12 +125,18 @@ public class Arbre {
 
 	public int hauteur() { // OK
 		int hauteur = 0;
+		int hauteurD = 0;
+		int hauteurG = 0;
+		
 		if (this.droit != null || this.gauche != null)
 			hauteur += 1;
 		if (this.gauche != null)
-			hauteur += this.gauche.hauteur();
+			hauteurG += this.gauche.hauteur();
 		if (this.droit != null)
-			hauteur += this.droit.hauteur();
+			hauteurD += this.droit.hauteur();
+		
+		hauteur += (hauteurD > hauteurG) ? hauteurD : hauteurG;
+		
 		return hauteur;
 	}
 
