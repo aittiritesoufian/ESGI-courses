@@ -88,11 +88,9 @@ public class Arbre {
 			this.droit = d.getGauche();
 			if(this.getParent().getDroit() != null && this.getParent().getDroit().getRacine() == this.racine) {
 				this.getParent().setDroit(d);
-//				System.out.println("first------------------");
 			}
 			if(this.getParent().getGauche() != null && this.getParent().getGauche().getRacine() == this.racine) {
 				this.getParent().setGauche(d);
-//				System.out.println("second------------------");
 			}
 			d.setGauche(this);
 		}

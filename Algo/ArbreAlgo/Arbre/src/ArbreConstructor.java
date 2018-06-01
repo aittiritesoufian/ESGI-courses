@@ -27,7 +27,7 @@ public class ArbreConstructor {
 		
 		a336.setDroit(a352);
 		
-		// rotations
+		// rotations.............
 		
 		System.out.println(a500.estEquilibre());
 		System.out.println(a500.prefix());
