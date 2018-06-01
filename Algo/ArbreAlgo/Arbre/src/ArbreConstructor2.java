@@ -30,7 +30,7 @@ public class ArbreConstructor2 {
 		a900.setDroit(a950);
 		a900.setGauche(a700);
 		
-		a700.setGauche(a800);
+		a700.setDroit(a800);
 		
 		a800.setDroit(a850);
 		a800.setGauche(a750);
