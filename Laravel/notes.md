@@ -43,6 +43,16 @@ ___
 artisan make:migration create_annonce_table
 
 artisan make:migration create_rating_table
+
+composer require pvtl/voyager-forms
+
+composer dump-autoload && php artisan voyager-forms:install
+
+artisan make:controller RegistrationController
+
+composer remove pvtl/voyager-forms
+
+composer require "laravelcollective/html"
 ```
 
 
@@ -61,7 +71,7 @@ make:auth
 
 migrate
 
-code:models
+// code:models
 
 artisan route:list -> permet de récupérer toute les routes
 
